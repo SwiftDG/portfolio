@@ -1,24 +1,18 @@
-import { BackgroundBeams } from "../components/ui/beams";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Projects from "../components/Projects";
-import Skills from "../components/Skills";
-import Contact from "../components/Contact";
-
-export default function Home() {
-  return (
-    <div className="relative min-h-screen overflow-hidden bg-[#070a12] text-white">
-      <BackgroundBeams className="fixed opacity-70" />
-      <div className="grain pointer-events-none fixed inset-0 z-0 opacity-[0.025]" />
-      <div className="relative z-10">
-        <Navbar />
-        <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-      </div>
-    </div>
-  );
-}
+import {ArrowUpRight,BriefcaseBusiness,Code2,Download,Mail} from "lucide-react";
+const facts=[["4.94 / 5.00","Chemical Engineering CGPA"],["568K","transactions analysed"],["99.97%","fraud-model recall"],["63 / 1,600","Squad Hackathon 3.0"]];
+const work=[
+["01","Resonance","AI product intelligence","Frontend engineer · four-person team","Built the interface for a two-agent product-rating and audience-segmentation system, with Firebase Authentication and Firestore persistence.","AUTH + PERSISTENCE","React · Vite · Firebase · FastAPI · Groq","https://project-resonance.vercel.app",null],
+["02","Vouch","Financial reputation","Frontend engineer · hackathon team","Built the trader dashboard, score visualisation, tier progression and live SSE updates—not the scoring model or entire product.","63RD OF 1,600","React · TypeScript · SSE · Supabase","https://vouchsignal.vercel.app/","https://github.com/SwiftDG/vouch-signal"],
+["03","Neuronode","Learning system","Solo developer","Designed and built a DSA tutor that uses guided questions and stuck-point detection instead of immediately giving away answers.","SOLO BUILD","React · Node.js · Express · OpenAI API","https://neuronode.quikdb.net","https://github.com/SwiftDG/Neuronode"],
+["04","Swift","Education platform","Owner · full-stack developer","Independently rebuilt and maintain this early UNILAG Chemical Engineering learning platform, currently serving 20+ real students.","20+ STUDENTS","React · JavaScript · Supabase · Python","https://swift-md.vercel.app/","https://github.com/SwiftDG/SWIFT-MD"],
+["05","Fraud Detection","Applied machine learning","ML engineer · ECX project","Engineered features, applied SMOTE, compared models and evaluated a separate test set across roughly 568,000 transactions.","99.97% RECALL","Python · pandas · scikit-learn · XGBoost",null,"https://github.com/SwiftDG/credit-card-fraud-detection"]];
+function Case({p}){return <article className="case"><div className="case-no">{p[0]}<span>{p[2]}</span></div><div><header><div><h3>{p[1]}</h3><small>{p[3]}</small></div><b>{p[5]}</b></header><p className="case-copy">{p[4]}</p><footer><span>{p[6]}</span><nav>{p[7]&&<a href={p[7]} target="_blank" rel="noreferrer">Live <ArrowUpRight/></a>}{p[8]&&<a href={p[8]} target="_blank" rel="noreferrer">Source <Code2/></a>}</nav></footer></div></article>}
+export default function Home(){return <main>
+<nav className="top"><a className="logo" href="#home">DG<sup>/26</sup></a><div><a href="#work">Work</a><a href="#about">Profile</a><a href="#contact">Contact</a></div><a href="/David_Master_CV.pdf" download>CV <Download/></a></nav>
+<section className="hero" id="home"><div><p className="label">DAVID IZUCHUKWU GILBERT · LAGOS, NG</p><h1>I study systems.<br/>Then I build them.</h1><p className="intro">Chemical Engineering student and software developer building useful products across education, applied AI and business operations.</p><div className="actions"><a className="button" href="#work">Examine the work</a><a href="#contact">Start a project <ArrowUpRight/></a></div></div><aside><img src="/david-gilbert.png" alt="David Izuchukwu Gilbert"/><small>ENGINEER / DEVELOPER<br/>AVAILABLE REMOTELY</small><p>Interested in the point where a difficult problem becomes a clear interface.</p></aside></section>
+<section className="facts">{facts.map(f=><div key={f[1]}><strong>{f[0]}</strong><span>{f[1]}</span></div>)}</section>
+<section className="work" id="work"><div className="section-head"><p className="label">SELECTED SYSTEMS / 2024—2026</p><h2>Five projects.<br/>Exact contributions.</h2><p>No vague “helped build” claims. Each file separates the product, my responsibility and the evidence.</p></div>{work.map(p=><Case key={p[1]} p={p}/>)}<a className="archive" href="https://github.com/SwiftDG" target="_blank" rel="noreferrer">Additional experiments and earlier builds <b>Open GitHub archive <ArrowUpRight/></b></a></section>
+<section className="about" id="about"><div><p className="label">PROFILE / METHOD</p><h2>Engineering discipline,<br/>without the costume.</h2></div><div><p>I am a Chemical Engineering student at the University of Lagos and a self-taught full-stack developer. The disciplines meet in how I work: define the system, find the constraint, test the assumptions and make the result understandable.</p><p>I build independently and inside small teams. I can own an interface, connect it to real data, explain my decisions and say clearly what is unfinished.</p><ol><li>Understand the workflow</li><li>Build the smallest useful system</li><li>Test real behaviour</li><li>Document and improve</li></ol></div></section>
+<section className="contact" id="contact"><p className="label">AVAILABLE FOR FOCUSED FREELANCE WORK</p><h2>Bring the problem.<br/>We’ll define the build.</h2><p>Business websites, focused web applications and lightweight workflow automation. Scope and deliverables are agreed before development begins.</p><div className="actions"><a className="button light" href="https://wa.me/2347068349199?text=Hello%20David%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noreferrer">WhatsApp</a><a href="mailto:israelizuchukwu17382302@gmail.com?subject=Project%20inquiry"><Mail/> Email</a></div></section>
+<div className="bottom">© {new Date().getFullYear()} DAVID GILBERT <span><a href="https://github.com/SwiftDG"><Code2/> GitHub</a><a href="https://linkedin.com/in/sarcdgdev"><BriefcaseBusiness/> LinkedIn</a></span></div>
+</main>}
