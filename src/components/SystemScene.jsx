@@ -1,15 +1,19 @@
 import { useEffect, useRef } from "react";
-import * as THREE from "three";
 
 export default function SystemScene() {
   const mount = useRef(null);
   useEffect(() => {
     const host = mount.current;
     if (!host) return;
+    let stopped=false,raf,renderer;
+    let cleanup=()=>{};
+    (async()=>{
+    const THREE = await import("three");
+    if(stopped)return;
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
     camera.position.set(0, 0, 8);
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference:"low-power" });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.7));
     renderer.setClearColor(0x000000, 0);
     host.appendChild(renderer.domElement);
@@ -35,14 +39,17 @@ export default function SystemScene() {
     const frame = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(5.4,4.3,2.5)), white);
     frame.material.opacity = .16; rig.add(frame);
 
-    let mx = 0, my = 0, raf;
+    let mx = 0, my = 0, scrollY = 0;
     const pointer = e => { mx = (e.clientX / innerWidth - .5) * .7; my = (e.clientY / innerHeight - .5) * .5; };
+    const scroll = () => { scrollY = Math.min(window.scrollY / Math.max(innerHeight,1),1); };
     const resize = () => { const w=host.clientWidth,h=host.clientHeight; camera.aspect=w/h; camera.updateProjectionMatrix(); renderer.setSize(w,h,false); };
     const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
     let t=0;
-    const draw=()=>{t+=.004; rig.rotation.y += ((mx + (reduce?0:t)) - rig.rotation.y)*.035; rig.rotation.x += ((-my + .12) - rig.rotation.x)*.035; renderer.render(scene,camera); raf=requestAnimationFrame(draw)};
-    addEventListener("pointermove",pointer,{passive:true}); addEventListener("resize",resize); resize(); draw();
-    return()=>{cancelAnimationFrame(raf);removeEventListener("pointermove",pointer);removeEventListener("resize",resize);renderer.dispose();host.removeChild(renderer.domElement)};
+    const draw=()=>{t+=.0025;const auto=reduce?0:t;rig.rotation.y+=((mx+auto+scrollY*.45)-rig.rotation.y)*.035;rig.rotation.x+=((-my+.12+scrollY*.18)-rig.rotation.x)*.035;renderer.render(scene,camera);raf=requestAnimationFrame(draw)};
+    addEventListener("pointermove",pointer,{passive:true});addEventListener("scroll",scroll,{passive:true});addEventListener("resize",resize);resize();scroll();draw();
+    cleanup=()=>{cancelAnimationFrame(raf);removeEventListener("pointermove",pointer);removeEventListener("scroll",scroll);removeEventListener("resize",resize);renderer.dispose();if(renderer.domElement.parentNode===host)host.removeChild(renderer.domElement)};
+    })();
+    return()=>{stopped=true;cleanup()};
   },[]);
   return <div className="system-scene" ref={mount} aria-hidden="true"/>;
 }
