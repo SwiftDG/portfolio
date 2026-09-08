@@ -1,0 +1,2 @@
+import { ArrowLeft } from "lucide-react";
+export default function PageNotfound() { return <main className="grid min-h-screen place-items-center bg-[#070a12] px-6 text-white"><div className="text-center"><p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-300">404</p><h1 className="mt-4 text-4xl font-semibold">This page does not exist.</h1><a href="/" className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-bold text-slate-950"><ArrowLeft className="h-4 w-4" /> Return home</a></div></main>; }
