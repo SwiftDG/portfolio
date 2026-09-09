@@ -69,3 +69,25 @@ html{scroll-padding-top:84px}
  .contact>p:not(.label){font-size:1rem}
  .bottom{gap:1rem}
 }
+
+/* Final narrow-screen containment fixes */
+.about:after{display:none}
+.about h2{color:#fff!important}
+.about>div:last-child>p{color:#cfd1d8!important}
+.about li{color:#f0f0ec!important}
+
+@media(max-width:800px){
+ .top>.nav-actions{display:flex;justify-self:end;align-items:center;gap:.8rem}
+ .top>.nav-actions .cv-link{display:flex}
+ .top>.nav-actions .menu-toggle{display:grid}
+ .case,.case>div,.case header,.case footer{min-width:0;max-width:100%}
+ .case h3{font-size:clamp(2.25rem,11vw,3.4rem);line-height:.95;white-space:normal;overflow-wrap:break-word;word-break:normal;max-width:100%}
+ .case header b{white-space:normal;line-height:1.35}
+ .case-copy{max-width:100%;overflow-wrap:break-word}
+ .case footer{gap:1.2rem}
+ .case footer>span{white-space:normal;overflow-wrap:anywhere}
+ .case footer nav{flex-wrap:wrap}
+ .contact{overflow:hidden}
+ .contact h2{font-size:clamp(2.85rem,12vw,3.8rem);line-height:.94;letter-spacing:-.055em;max-width:100%;white-space:normal;overflow-wrap:break-word}
+ .contact .label{font-size:.66rem;line-height:1.65;max-width:90%}
+}
