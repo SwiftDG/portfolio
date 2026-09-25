@@ -18,7 +18,7 @@ export const projects = [
       "An academic platform for UNILAG engineering students combining structured course materials, testing and AI-assisted question generation.",
     contribution:
       "Independently rebuilt and maintain the platform across the frontend, authentication, database, course-material workflow, quiz system and AI-assisted question-generation backend.",
-    evidence: "20+ real student users",
+    evidence: "Several students",
     stack: ["React", "Vite", "Tailwind CSS", "Supabase", "FastAPI"],
     live: "https://swift-md.vercel.app/",
     source: "https://github.com/SwiftDG/SWIFT-MD",
