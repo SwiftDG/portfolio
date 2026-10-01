@@ -72,22 +72,6 @@ export const projects = [
     source: "https://github.com/SwiftDG/urban-brand-creatives",
   },
   {
-    slug: "neuronode",
-    name: "Neuronode",
-    category: "Learning system",
-    filters: ["Software", "AI / ML"],
-    year: "2026",
-    role: "Solo developer",
-    summary:
-      "A DSA tutor that guides learners with questions and stuck-point detection instead of immediately revealing solutions.",
-    contribution:
-      "Designed and built the product independently, including the learning and test experiences and AI-assisted tutoring workflow.",
-    evidence: "Complete solo build",
-    stack: ["React", "Node.js", "Express", "OpenAI API"],
-    live: "https://neuronode.quikdb.net",
-    source: "https://github.com/SwiftDG/Neuronode",
-  },
-  {
     slug: "resonance",
     name: "Resonance",
     category: "AI product intelligence",
@@ -102,6 +86,54 @@ export const projects = [
     stack: ["React", "Vite", "Firebase", "FastAPI", "Groq"],
     live: "https://project-resonance.vercel.app",
     source: null,
+  },
+  {
+    slug: "nexstore",
+    name: "NexStore",
+    category: "Storefront frontend",
+    filters: ["Software"],
+    year: "2026",
+    role: "Frontend developer · solo project",
+    summary:
+      "A responsive storefront demo with searchable products, category filters and a persistent sample bag.",
+    contribution:
+      "Built the storefront interface and its browsing and bag interactions. The catalogue is sample content, with no real orders or payments.",
+    evidence: "Responsive multi-page demo",
+    stack: ["React", "Vite", "CSS"],
+    live: "https://itsnexstore.vercel.app/",
+    source: "https://github.com/SwiftDG/nexstore-ui",
+  },
+  {
+    slug: "pepper-table",
+    name: "Pepper Table",
+    category: "Restaurant website concept",
+    filters: ["Software"],
+    year: "2026",
+    role: "Frontend developer · solo project",
+    summary:
+      "A responsive restaurant website concept with a sample Nigerian menu, dish search and category filters.",
+    contribution:
+      "Built the multi-page frontend and menu interactions. This is a concept, not an operating restaurant or ordering service.",
+    evidence: "Multi-page static frontend",
+    stack: ["HTML", "CSS", "JavaScript"],
+    live: "https://pepper-table-site.vercel.app/",
+    source: "https://github.com/SwiftDG/pepper-table-site",
+  },
+  {
+    slug: "commonwell-church",
+    name: "Commonwell Church",
+    category: "Church website concept",
+    filters: ["Software"],
+    year: "2026",
+    role: "Frontend developer · solo project",
+    summary:
+      "A four-page website concept for an imagined church community, with first-visit information and filtered community pathways.",
+    contribution:
+      "Built the responsive pages and interactive details using plain HTML, CSS and JavaScript. The congregation and programme information are illustrative.",
+    evidence: "Four-page static frontend",
+    stack: ["HTML", "CSS", "JavaScript"],
+    live: "https://commonwell-church.vercel.app/",
+    source: "https://github.com/SwiftDG/commonwell-church",
   },
   {
     slug: "graphsense",
