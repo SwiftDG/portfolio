@@ -1,28 +1,53 @@
-import {useState} from "react";
-import {ArrowUpRight,BriefcaseBusiness,Code2,Download,Mail,Menu,X} from "lucide-react";
+import { useState } from "react";
+import { ArrowUpRight, Atom, Braces, BriefcaseBusiness, ChartNoAxesCombined, Code2, CodeXml, Database, Download, FlaskConical, Mail, Menu, Server, Terminal, X } from "lucide-react";
 import SystemScene from "../components/SystemScene";
-const facts=[["4.94 / 5.00","Chemical Engineering CGPA"],["568K","transactions analysed"],["99.97%","fraud-model recall"],["63 / 1,600","Squad Hackathon 3.0"]];
-const toolkit=[
-["Product engineering",["JavaScript","TypeScript","React","Vite","Tailwind CSS","Node.js","Express","FastAPI","REST APIs"]],
-["Data + platforms",["Python","PostgreSQL","Supabase","Firebase","Firestore","Prisma ORM","Git","GitHub","Vercel"]],
-["Machine learning",["pandas","scikit-learn","XGBoost","Random Forest","SMOTE","Jupyter","Google Colab"]],
-["Engineering + visualisation",["ANSYS","MATLAB","JMP","AutoCAD","Fusion 360","Blender"]]
+import { projects } from "../data/projects";
+
+const featured = ["swift", "graphsense", "vouch", "fraud-detection", "nexstore"]
+  .map((slug) => projects.find((project) => project.slug === slug));
+const stack = [
+  ["React", Atom], ["TypeScript", Braces], ["Python", Terminal], ["MATLAB", ChartNoAxesCombined],
+  ["Supabase", Database], ["Node.js", Server], ["Vite", CodeXml], ["FastAPI", FlaskConical],
 ];
-const work=[
-["01","Resonance","AI product intelligence","Frontend engineer · four-person team","Built the interface for a two-agent product-rating and audience-segmentation system, with Firebase Authentication and Firestore persistence.","AUTH + PERSISTENCE","React · Vite · Firebase · FastAPI · Groq","https://project-resonance.vercel.app",null],
-["02","Vouch","Financial reputation","Frontend engineer · hackathon team","Built the trader dashboard, score visualisation, tier progression and live SSE updates—not the scoring model or entire product.","63RD OF 1,600","React · TypeScript · SSE · Supabase","https://vouchsignal.vercel.app/","https://github.com/SwiftDG/vouch-signal"],
-["03","Neuronode","Learning system","Solo developer","Designed and built a DSA tutor that uses guided questions and stuck-point detection instead of immediately giving away answers.","SOLO BUILD","React · Node.js · Express · OpenAI API","https://neuronode.quikdb.net","https://github.com/SwiftDG/Neuronode"],
-["04","Swift","Education platform","Owner · full-stack developer","Independently rebuilt and maintain this early UNILAG Chemical Engineering learning platform, currently used by several students.","SEVERAL STUDENTS","React · JavaScript · Supabase · Python","https://swift-md.vercel.app/","https://github.com/SwiftDG/SWIFT-MD"],
-["05","Fraud Detection","Applied machine learning","ML engineer · ECX project","Engineered features, applied SMOTE, compared models and evaluated a separate test set across roughly 568,000 transactions.","99.97% RECALL","Python · pandas · scikit-learn · XGBoost",null,"https://github.com/SwiftDG/credit-card-fraud-detection"]];
-function Case({p}){return <article className="case"><div className="case-no">{p[0]}<span>{p[2]}</span></div><div><header><div><h3>{p[1]}</h3><small>{p[3]}</small></div><b>{p[5]}</b></header><p className="case-copy">{p[4]}</p><footer><span>{p[6]}</span><nav>{p[7]&&<a href={p[7]} target="_blank" rel="noreferrer">Live <ArrowUpRight/></a>}{p[8]&&<a href={p[8]} target="_blank" rel="noreferrer">Source <Code2/></a>}</nav></footer></div></article>}
-export default function Home(){const[menuOpen,setMenuOpen]=useState(false);const closeMenu=()=>setMenuOpen(false);return <main>
-<nav className="top"><a className="logo" href="#home" onClick={closeMenu}>DG<sup>/26</sup></a><div className={menuOpen?"nav-items open":"nav-items"}><a href="#work" onClick={closeMenu}>Work</a><a href="#about" onClick={closeMenu}>Profile</a><a href="#contact" onClick={closeMenu}>Contact</a></div><div className="nav-actions"><a className="cv-link" href="/David_Master_CV.pdf" download>CV <Download/></a><button type="button" className="menu-toggle" aria-label="Toggle navigation" aria-expanded={menuOpen} onClick={()=>setMenuOpen(v=>!v)}>{menuOpen?<X/>:<Menu/>}</button></div></nav>
-<section className="hero" id="home"><SystemScene/><div className="hero-copy"><p className="label">DAVID IZUCHUKWU GILBERT · LAGOS, NG</p><h1>I study systems.<br/>Then I build them.</h1><p className="intro">Chemical Engineering student and software developer building useful products across education, applied AI and business operations.</p><div className="actions"><a className="button" href="#work">Examine the work</a><a href="#contact">Start a project <ArrowUpRight/></a></div></div><aside><picture><source srcSet="/david-gilbert-420.webp 420w, /david-gilbert-700.webp 700w" sizes="(max-width: 800px) 290px, 360px" type="image/webp"/><img src="/david-gilbert-420.webp" width="420" height="547" fetchPriority="high" decoding="async" alt="David Izuchukwu Gilbert, Chemical Engineering student and software developer in Lagos"/></picture><small>ENGINEER / DEVELOPER<br/>AVAILABLE REMOTELY</small><p>Interested in the point where a difficult problem becomes a clear interface.</p></aside></section>
-<section className="facts">{facts.map(f=><div key={f[1]}><strong>{f[0]}</strong><span>{f[1]}</span></div>)}</section>
-<section className="work" id="work"><div className="section-head"><p className="label">SELECTED SYSTEMS / 2024—2026</p><h2>Selected work.<br/>Exact contributions.</h2><p>A focused selection—not my complete project history. Each file separates the product, my responsibility and the evidence.</p></div>{work.map(p=><Case key={p[1]} p={p}/>)}<a className="archive" href="/projects">More software, engineering work and experiments <b>View project archive <ArrowUpRight/></b></a></section>
-<section className="toolkit" aria-labelledby="toolkit-title"><div className="toolkit-intro"><p className="label">WORKING TOOLKIT / ACROSS DISCIPLINES</p><h2 id="toolkit-title">Code, data<br/>and engineering.</h2><p>Tools I have used across shipped software, applied machine-learning work, engineering analysis and technical visualisation.</p></div><div className="toolkit-grid">{toolkit.map(([group,items],index)=><article key={group}><span>0{index+1}</span><h3>{group}</h3><ul>{items.map(item=><li key={item}>{item}</li>)}</ul></article>)}</div></section>
-<section className="about" id="about"><div><p className="label">PROFILE / METHOD</p><h2>Engineering discipline,<br/>without the costume.</h2></div><div><p>I am a Chemical Engineering student at the University of Lagos and a self-taught full-stack developer. The disciplines meet in how I work: define the system, find the constraint, test the assumptions and make the result understandable.</p><p>I build independently and inside small teams. I can own an interface, connect it to real data, explain my decisions and say clearly what is unfinished.</p><ol><li>Understand the workflow</li><li>Build the smallest useful system</li><li>Test real behaviour</li><li>Document and improve</li></ol></div></section>
-<section className="cv-panel"><div><p className="label">FULL RECORD / MASTER CV</p><h2>Education, projects,<br/>awards and experience.</h2></div><div><p>The selected case files above are only the short version. My master CV includes engineering competitions, software work, technical experience, certifications and leadership.</p><a className="button" href="/David_Master_CV.pdf" download>Download master CV <Download/></a></div></section>
-<section className="contact" id="contact"><p className="label">AVAILABLE FOR FOCUSED FREELANCE WORK</p><h2>Bring the problem.<br/>We’ll define the build.</h2><p>Business websites, focused web applications and lightweight workflow automation. Scope and deliverables are agreed before development begins.</p><div className="actions"><a className="button light" href="https://wa.me/2347068349199?text=Hello%20David%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noreferrer">WhatsApp</a><a href="mailto:israelizuchukwu17382302@gmail.com?subject=Project%20inquiry"><Mail/> Email</a></div></section>
-<div className="bottom">© {new Date().getFullYear()} DAVID GILBERT <span><a href="https://github.com/SwiftDG"><Code2/> GitHub</a><a href="https://linkedin.com/in/sarcdgdev"><BriefcaseBusiness/> LinkedIn</a></span></div>
-</main>}
+const record = [
+  ["Nigerite", "SIWES trainee in the Process Department, primarily SM6. Official placement began September 2026; on-site training began 5 October."],
+  ["HNG Internship 13", "Completed Stages 0–3 in backend development, October to December 2025."],
+  ["ECX UNILAG", "AI/ML track participant since 2025. Built and evaluated the credit-card fraud-detection project shown above."],
+  ["3MTT Cohort 4", "AI/ML Fellow in an ongoing learning programme."],
+  ["GCI World 2026", "Participant in the ongoing September programme from the Matsuo-Iwasawa Laboratory."],
+  ["Engineering competitions", "Led teams in the Dangote Cement Plc University Engineering Challenge, PIDEC 1.0 and TID 5.0."],
+];
+
+function ProjectFeature({ project }) {
+  return <article className={`feature ${project.preview ? "has-preview" : "no-preview"}`}>
+    <div className="feature-body">
+      <p className="feature-category">{project.category} <span>/ {project.evidence}</span></p>
+      <h3>{project.name}</h3>
+      <p className="feature-summary">{project.summary}</p>
+      <p className="feature-role">{project.role}</p>
+      <p className="feature-contribution"><strong>What I did</strong>{project.contribution}</p>
+      <div className="feature-links">
+        {project.live && <a href={project.live} target="_blank" rel="noreferrer">{project.liveLabel || "View live site"} <ArrowUpRight /></a>}
+        {project.source && <a href={project.source} target="_blank" rel="noreferrer">View source <Code2 /></a>}
+        <a href={`/projects#${project.slug}`}>More detail <ArrowUpRight /></a>
+      </div>
+    </div>
+    {project.preview && <figure className="feature-preview"><img src={project.preview} alt={`Public homepage of ${project.name}, captured October 2026`} loading="lazy" width="1340" height="930" /><figcaption>PUBLIC HOMEPAGE, OCT 2026</figcaption></figure>}
+  </article>;
+}
+
+export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
+  return <main>
+    <nav className="top"><a className="logo" href="#home" onClick={closeMenu}>DG<sup>/26</sup></a><div className={menuOpen ? "nav-items open" : "nav-items"}><a href="#work" onClick={closeMenu}>Work</a><a href="/projects" onClick={closeMenu}>All projects</a><a href="#experience" onClick={closeMenu}>Experience</a><a href="#about" onClick={closeMenu}>About</a><a href="#contact" onClick={closeMenu}>Contact</a></div><div className="nav-actions"><a className="cv-link" href="/David_Master_CV.pdf" download>CV <Download /></a><button type="button" className="menu-toggle" aria-label="Toggle navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen((value) => !value)}>{menuOpen ? <X /> : <Menu />}</button></div></nav>
+    <section className="hero" id="home"><SystemScene /><div className="hero-copy"><p className="label">DAVID IZUCHUKWU GILBERT · LAGOS</p><h1>Engineering student.<br />Software builder.</h1><p className="intro">I study Chemical Engineering at UNILAG and build useful software. My work ranges from a student learning platform to chart sonification, machine learning and frontend interfaces.</p><div className="actions"><a className="button glass-button" href="#work">See the work <ArrowUpRight /></a><a href="/projects">All projects <ArrowUpRight /></a></div></div><aside className="portrait"><picture><source srcSet="/david-gilbert-420.webp 420w, /david-gilbert-700.webp 700w" sizes="(max-width: 800px) 140px, 240px" type="image/webp" /><img src="/david-gilbert-420.webp" width="420" height="547" fetchPriority="high" decoding="async" alt="David Gilbert" /></picture><p>DAVID GILBERT / UNILAG</p></aside></section>
+    <section className="work" id="work"><div className="work-heading"><p className="label">SELECTED WORK</p><h2>Work you can open.<br />Contributions you can check.</h2><p>Five projects across software, engineering and applied machine learning. Live links are labeled by what is ready.</p></div>{featured.map((project) => <ProjectFeature key={project.slug} project={project} />)}<a className="archive glass-button" href="/projects"><span>Resonance, Pepper Table, Commonwell and more</span><strong>Explore all {projects.length} projects <ArrowUpRight /></strong></a></section>
+    <section className="stack-section" aria-label="Tools I use"><div><p className="label">TOOLS IN THE WORK</p><h2>From code to process.</h2></div><div className="stack-window"><div className="stack-track">{[...stack, ...stack].map(([name, Icon], index) => <span key={`${name}-${index}`} aria-hidden={index >= stack.length}><Icon aria-hidden="true" />{name}</span>)}</div></div><p>Pause over the tools to read them. Motion stops when reduced motion is enabled.</p></section>
+    <section className="record" id="experience"><div className="record-intro"><p className="label">EXPERIENCE AND TRAINING</p><h2>The work around the projects.</h2><p>Ongoing programmes are marked as ongoing. Competition outcomes belong to the teams.</p></div><div className="record-list">{record.map(([title, detail]) => <article key={title}><h3>{title}</h3><p>{detail}</p></article>)}</div><p className="record-awards">GraphSense: 1st place, AFRETEC-UNILAG MathWorks category. DCP: Top 20 of 300+ submissions. PIDEC 1.0: 4th of 10 teams. TID 5.0: Top 20 semifinalist.</p></section>
+    <section className="about" id="about"><div><p className="label">ABOUT</p><h2>David, in brief.</h2></div><div><p>I am a Chemical Engineering student at the University of Lagos and a self-taught software developer. I like work where a complex system becomes understandable through a useful interface.</p><p>I build independently and in small teams. I explain my part, what has been tested and what still needs work.</p><p>My official CGPA is 4.94/5.00 through 100 level. Updated 200 level results are awaiting publication.</p></div></section>
+    <section className="cv-panel"><div><p className="label">MASTER CV</p><h2>For the full record.</h2></div><div><p>Education, software and engineering projects, experience, memberships and awards.</p><a className="button glass-button" href="/David_Master_CV.pdf" download>Download CV <Download /></a></div></section>
+    <section className="contact" id="contact"><p className="label">CONTACT</p><h2>Have a project in mind?</h2><p>I take on focused websites, interfaces and software work with a clear scope.</p><div className="actions"><a className="button glass-button" href="https://wa.me/2347068349199?text=Hello%20David%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noreferrer">WhatsApp <ArrowUpRight /></a><a href="mailto:israelizuchukwu17382302@gmail.com?subject=Project%20inquiry"><Mail /> Email</a></div></section>
+    <div className="bottom">© {new Date().getFullYear()} DAVID GILBERT <span><a href="https://github.com/SwiftDG"><Code2 /> GitHub</a><a href="https://linkedin.com/in/sarcdgdev"><BriefcaseBusiness /> LinkedIn</a></span></div>
+  </main>;
+}

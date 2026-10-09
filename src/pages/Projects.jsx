@@ -10,7 +10,7 @@ import { projectFilters, projects } from "../data/projects";
 
 function ProjectCard({ project, index }) {
   return (
-    <article className="project-file">
+    <article className="project-file" id={project.slug}>
       <div className="project-file-meta">
         <span>{String(index + 1).padStart(2, "0")}</span>
         <span>{project.year}</span>
@@ -27,6 +27,7 @@ function ProjectCard({ project, index }) {
           <strong>{project.evidence}</strong>
         </div>
 
+        {project.preview && <figure className="project-preview"><img src={project.preview} alt={`Public homepage of ${project.name}, captured October 2026`} loading="lazy" width="1340" height="930" /><figcaption>PUBLIC HOMEPAGE, OCT 2026</figcaption></figure>}
         <p className="project-summary">{project.summary}</p>
 
         <div className="project-contribution">
@@ -45,7 +46,7 @@ function ProjectCard({ project, index }) {
             <div className="project-links">
               {project.live && (
                 <a href={project.live} target="_blank" rel="noreferrer">
-                  Live
+                  {project.liveLabel || "View live site"}
                   <ExternalLink />
                 </a>
               )}
@@ -110,6 +111,14 @@ export default function Projects() {
           </span>
         </div>
       </section>
+
+      <nav className="project-shortcuts" aria-label="Jump to a project">
+        <span>Jump to</span>
+        {["swift", "graphsense", "vouch", "nexstore", "resonance", "pepper-table", "commonwell-church"].map((slug) => {
+          const project = projects.find((item) => item.slug === slug);
+          return <a key={slug} href={`#${slug}`}>{project.name}</a>;
+        })}
+      </nav>
 
       <section className="project-browser">
         <div className="project-filter-bar">

@@ -1,0 +1,12 @@
+{
+  "capturedOn": "2026-10-09",
+  "method": "Public homepage viewport captures",
+  "previews": {
+    "swift": { "file": "swift-home.jpg", "source": "https://swift-md.vercel.app/" },
+    "vouch": { "file": "vouch-home.jpg", "source": "https://vouchsignal.vercel.app/" },
+    "nexstore": { "file": "nexstore-home.jpg", "source": "https://itsnexstore.vercel.app/" },
+    "resonance": { "file": "resonance-home.jpg", "source": "https://project-resonance.vercel.app/" },
+    "pepper-table": { "file": "pepper-home.jpg", "source": "https://pepper-table-site.vercel.app/" },
+    "commonwell-church": { "file": "commonwell-home.jpg", "source": "https://commonwell-church.vercel.app/" }
+  }
+}
