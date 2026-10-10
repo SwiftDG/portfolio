@@ -26,6 +26,7 @@ export const projects = [
   },
   {
     slug: "crxray",
+    preview: "/project-previews/crxray-home.jpg",
     name: "CrxRay",
     category: "Developer tooling",
     filters: ["Software", "AI / ML", "Hackathons"],
@@ -37,7 +38,7 @@ export const projects = [
       "Worked on the product as part of the hackathon team, including implementation and preparation of the working demo and submission.",
     evidence: "TLN Hackathon 2026",
     stack: ["Web development", "Applied AI"],
-    live: null,
+    live: "https://crxray-black.vercel.app/",
     source: null,
   },
   {

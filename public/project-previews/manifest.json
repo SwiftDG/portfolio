@@ -7,6 +7,7 @@
     "nexstore": { "file": "nexstore-home.jpg", "source": "https://itsnexstore.vercel.app/" },
     "resonance": { "file": "resonance-home.jpg", "source": "https://project-resonance.vercel.app/" },
     "pepper-table": { "file": "pepper-home.jpg", "source": "https://pepper-table-site.vercel.app/" },
-    "commonwell-church": { "file": "commonwell-home.jpg", "source": "https://commonwell-church.vercel.app/" }
+    "commonwell-church": { "file": "commonwell-home.jpg", "source": "https://commonwell-church.vercel.app/" },
+    "crxray": { "file": "crxray-home.jpg", "source": "https://crxray-black.vercel.app/" }
   }
 }
