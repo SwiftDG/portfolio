@@ -23,7 +23,7 @@ export const education = [
     place: "University of Lagos",
     period: "2024 to 2029 (expected)",
     detail:
-      "Now in 300 Level. Official CGPA 4.65/5.00 through 200 Level, first semester; second-semester results pending.",
+      "Now in 300 Level. Official CGPA 4.65/5.00 through 200 Level, first semester; second-semester results pending. Recipient of the NNPC/Seplat 2026 National Undergraduate Scholarship (Seplat Energy PLC).",
   },
   {
     title: "Senior Secondary Education",
@@ -41,6 +41,18 @@ export const experience = [
     period: "1 Sep to 3 Nov 2026",
     detail:
       "Collected and documented production records, reported daily vacuum and injector readings, ran supervised premixer and mixer tests, and made viscosity, moisture and density-related quality-control measurements. Placement completed.",
+  },
+  {
+    title: "Contributor, Academic and Competitions Team",
+    place: "AIChE UNILAG",
+    period: "Nov 2026 to present",
+    detail: "Joined the team in November 2026 as a contributor. Early days, with no team outputs to report yet.",
+  },
+  {
+    title: "NextGen AI Hackathon, Team Participant",
+    place: "Wale Lab",
+    period: "Nov 2026",
+    detail: "Took part as a member of a team. Holds a certificate of participation (issued 19 November 2026).",
   },
   {
     title: "AI Upskilling Programme, Selected Participant",
@@ -90,6 +102,7 @@ export const experience = [
 ];
 
 export const awards = [
+  ["Scholarship recipient", "NNPC/Seplat 2026 National Undergraduate Scholarship, Seplat Energy PLC"],
   ["1st place", "GraphSense, AFRETEC-UNILAG MathWorks category"],
   ["Top 20 of 300+", "Dangote Cement Plc University Engineering Challenge 2026 (team leader)"],
   ["4th of 10 teams", "PIDEC 1.0, Klova (team leader); Stage 1 score 90.5/100"],
