@@ -41,8 +41,7 @@ export default function Work() {
   return (
     <section className="work dark" id="work" aria-labelledby="work-title">
       <div className="section-head">
-        <p className="kicker">Selected work</p>
-        <h2 id="work-title">Things I've built,<br />and my part in each.</h2>
+        <h2 id="work-title">Selected work <sup className="count">{String(featured.length).padStart(2, "0")}</sup></h2>
       </div>
       <ul className="work-list" onPointerMove={track} onPointerLeave={() => setActive(null)}>
         {featured.map((p, i) => (

@@ -16,7 +16,6 @@ export default function Contact() {
 
   return (
     <footer className="contact dark" id="contact">
-      <p className="kicker">Contact</p>
       <h2 className="contact-title">
         <span>Let's work</span>
         <span className="contact-line">
@@ -29,7 +28,7 @@ export default function Contact() {
         </span>
       </h2>
       <p className="contact-avail"><i aria-hidden="true" /> Available for freelance projects</p>
-      <div className="contact-pills">
+      <div className="contact-lines">
         <a href={`mailto:${contact.email}?subject=Project%20inquiry`}><Roll>{contact.email}</Roll></a>
         <a href={`tel:${contact.phone.replace(/\s/g, "")}`}><Roll>{contact.phone}</Roll></a>
       </div>

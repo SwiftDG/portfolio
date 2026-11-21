@@ -8,7 +8,6 @@ export default function Intro() {
   const words = statement.split(" ");
   return (
     <section className="intro paper" id="intro" ref={ref}>
-      <p className="kicker">Intro</p>
       <p className={`statement ${seen ? "in" : ""}`}>
         {words.map((w, i) => (
           <span key={i} style={{ transitionDelay: `${i * 28}ms` }}>{w} </span>

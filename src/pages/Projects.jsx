@@ -58,8 +58,7 @@ export default function Projects() {
   return (
     <>
       <section className="arch-hero dark">
-        <p className="kicker">Archive</p>
-        <h1>Everything<br />I've built.</h1>
+        <h1>Archive</h1>
         <p className="lede">{projects.length} projects across software, applied AI and engineering. Open any row for my part, the result and the links.</p>
       </section>
       <section className="arch paper" aria-label="Project archive">

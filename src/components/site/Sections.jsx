@@ -7,8 +7,7 @@ export function Services() {
   return (
     <section className="services paper" id="services" aria-labelledby="services-title">
       <div className="section-head">
-        <p className="kicker">What I do</p>
-        <h2 id="services-title">Three kinds of work<br />I take on.</h2>
+        <h2 id="services-title">What I do</h2>
       </div>
       <ol className="service-list">
         {services.map((s, i) => (
@@ -38,13 +37,12 @@ export function About() {
         </picture>
       </div>
       <div className="about-text">
-        <p className="kicker">About</p>
-        <h2 id="about-title">An engineer's habits, applied to software.</h2>
+        <h2 id="about-title">About</h2>
         <p className="lede">
-          I'm a self-taught developer and a Chemical Engineering student in Lagos. Engineering taught me to find the real constraint first. In software that means building the smallest useful version, then checking it.
+          I'm a self-taught developer and a Chemical Engineering student at UNILAG, based in Lagos. I build web products and applied AI features, alone and in small teams.
         </p>
         <p className="lede">
-          I work alone and in small teams, and I'm clear about which part is mine. Team projects here say what I built; concepts are marked as concepts.
+          Every project here says which part is mine. Team projects name my role, concepts are marked as concepts, and no client results are claimed.
         </p>
         <dl className="skills">
           {Object.entries(skills).map(([k, v]) => (
@@ -52,7 +50,7 @@ export function About() {
           ))}
         </dl>
         <Magnetic className="cv-wrap" strength={0.4}>
-          <a className="round-btn accent" href={contact.cv} download><Download aria-hidden="true" /><span>Master<br />CV</span></a>
+          <a className="round-btn" href={contact.cv} download><Download aria-hidden="true" /><span>Master<br />CV</span></a>
         </Magnetic>
       </div>
     </section>
@@ -80,8 +78,7 @@ export function Experience() {
   return (
     <section className="experience paper" id="experience" aria-labelledby="exp-title">
       <div className="section-head">
-        <p className="kicker">Experience and education</p>
-        <h2 id="exp-title">Where I've studied,<br />trained and worked.</h2>
+        <h2 id="exp-title">Experience and education</h2>
       </div>
       <h3 className="sub">Education</h3>
       <Rows items={education} />
