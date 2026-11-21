@@ -59,6 +59,23 @@ export const projects = [
     source: "https://github.com/SwiftDG/vouch-signal",
   },
   {
+    slug: "paypal-hub",
+    preview: "/project-previews/paypal-hub-home.jpg",
+    name: "PayPal Hub",
+    category: "Hackathon product",
+    filters: ["Software", "AI / ML", "Hackathons"],
+    year: "2026",
+    role: "Frontend engineer · hackathon team",
+    summary:
+      "Find it, pay with PayPal, keep your subscriptions in check. A PayPal AI Hackathon product with a Guardian that watches subscriptions.",
+    contribution:
+      "Contributed to the frontend: the homepage, authentication experience, discovery interface and supporting screens, with reusable components. A team handled the backend and AI functionality separately.",
+    evidence: "PayPal AI Hackathon 2026",
+    stack: ["React", "Frontend components", "Authentication UI"],
+    live: "https://paypal-hub.vercel.app/",
+    source: "https://github.com/MI-Systems-Tech/PayPal-hub",
+  },
+  {
     slug: "urban-brand-creatives",
     name: "Urban Brand Creatives",
     category: "Business website",

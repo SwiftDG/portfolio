@@ -1,0 +1,557 @@
+{
+  "chips": [
+    {
+      "label": "Who is David?",
+      "id": "who"
+    },
+    {
+      "label": "What has he built?",
+      "id": "built"
+    },
+    {
+      "label": "Skills?",
+      "id": "skills"
+    },
+    {
+      "label": "Is he available?",
+      "id": "availability"
+    },
+    {
+      "label": "How do I contact him?",
+      "id": "contact"
+    },
+    {
+      "label": "Where's his CV?",
+      "id": "cv"
+    }
+  ],
+  "entries": [
+    {
+      "id": "who",
+      "keywords": [
+        "who",
+        "david",
+        "about",
+        "introduce",
+        "background",
+        "yourself",
+        "gilbert"
+      ],
+      "answer": "David Izuchukwu Gilbert is a Chemical Engineering student at the University of Lagos (300 Level) and a self-taught software developer based in Lagos. He builds web products and applied AI features, independently and in small teams.",
+      "links": [
+        {
+          "label": "Read the CV",
+          "href": "/David_Master_CV.pdf"
+        }
+      ]
+    },
+    {
+      "id": "built",
+      "keywords": [
+        "built",
+        "build",
+        "made",
+        "work",
+        "projects",
+        "portfolio",
+        "show",
+        "examples"
+      ],
+      "answer": "Selected work: Swift, GraphSense, Vouch, PayPal Hub, Fraud Detection. There are 15 projects in the full archive, covering software, applied AI and engineering competitions.",
+      "links": [
+        {
+          "label": "Open the archive",
+          "href": "/projects"
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "keywords": [
+        "skills",
+        "skill",
+        "stack",
+        "tech",
+        "technologies",
+        "tools",
+        "languages",
+        "react",
+        "python",
+        "know"
+      ],
+      "answer": "Software: React, Next.js, JavaScript, TypeScript, HTML, CSS, Tailwind CSS, Vite, Node.js, Express, FastAPI, Python, REST APIs. Data and backend: PostgreSQL, Supabase, Firebase, Firestore, Prisma ORM, Git and GitHub. Machine learning: pandas, NumPy, scikit-learn, XGBoost, Random Forest, SMOTE, Hugging Face Transformers, LoRA, mT5. Engineering: ANSYS, MATLAB, JMP, AutoCAD, Fusion 360, Blender, RTsim.Career; mass and energy balances, heat transfer, process control fundamentals.",
+      "links": []
+    },
+    {
+      "id": "availability",
+      "keywords": [
+        "available",
+        "availability",
+        "hire",
+        "hiring",
+        "freelance",
+        "free",
+        "work with",
+        "open"
+      ],
+      "answer": "Available for freelance projects. SIWES placement at Nigerite ended on 3 November 2026. The quickest way to start is a message on WhatsApp or email.",
+      "links": [
+        {
+          "label": "WhatsApp",
+          "href": "https://wa.me/2347068349199?text=Hello%20David%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+        },
+        {
+          "label": "Email",
+          "href": "mailto:israelizuchukwu17382302@gmail.com"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "keywords": [
+        "contact",
+        "reach",
+        "email",
+        "whatsapp",
+        "phone",
+        "call",
+        "message",
+        "touch",
+        "linkedin",
+        "github"
+      ],
+      "answer": "Email: israelizuchukwu17382302@gmail.com. WhatsApp and phone: +234 706 834 9199. He is based in Lagos, Nigeria.",
+      "links": [
+        {
+          "label": "WhatsApp",
+          "href": "https://wa.me/2347068349199?text=Hello%20David%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+        },
+        {
+          "label": "Email",
+          "href": "mailto:israelizuchukwu17382302@gmail.com"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/SwiftDG"
+        },
+        {
+          "label": "LinkedIn",
+          "href": "https://linkedin.com/in/sarcdgdev"
+        }
+      ]
+    },
+    {
+      "id": "cv",
+      "keywords": [
+        "cv",
+        "resume",
+        "résumé",
+        "download",
+        "pdf"
+      ],
+      "answer": "The Master CV is a PDF with education, projects, experience, awards and skills.",
+      "links": [
+        {
+          "label": "Download the CV",
+          "href": "/David_Master_CV.pdf"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "keywords": [
+        "education",
+        "study",
+        "studies",
+        "university",
+        "unilag",
+        "school",
+        "degree",
+        "cgpa",
+        "grade",
+        "level"
+      ],
+      "answer": "B.Eng. Chemical Engineering, University of Lagos (2024 to 2029 (expected)). Now in 300 Level. Official CGPA 4.65/5.00 through 200 Level, first semester; second-semester results pending. Senior Secondary Education, Elite Crop College (2020 to 2023). Overall Best Graduating Senior Secondary School Student and Head Boy, 2023. SAT 1360/1600, JAMB UTME 302/400 (2024), WAEC three A grades, NECO five A grades.",
+      "links": []
+    },
+    {
+      "id": "experience",
+      "keywords": [
+        "experience",
+        "intern",
+        "internship",
+        "siwes",
+        "nigerite",
+        "placement",
+        "job",
+        "role",
+        "training",
+        "programme",
+        "program",
+        "fate",
+        "deepmind",
+        "3mtt",
+        "hng",
+        "ecx",
+        "tokyo",
+        "gci"
+      ],
+      "answer": "SIWES Trainee, Process Department (SM6), Nigerite Limited (1 Sep to 3 Nov 2026). AI Upskilling Programme, Selected Participant, FATE Foundation and Google DeepMind (Africa AI Upskilling Programme) (Nov 2026 to present). GCI World 2026 September Programme, Matsuo-Iwasawa Laboratory, University of Tokyo (Sep to Dec 2026 (ongoing)). AI/ML Fellow, 3 Million Technical Talent (3MTT), Cohort 4 (2026 to present). AI/ML Track Participant, ECX UNILAG (Jan 2025 to present). Backend Intern, HNG Internship, Cohort 13 (Oct to Dec 2025).",
+      "links": []
+    },
+    {
+      "id": "awards",
+      "keywords": [
+        "award",
+        "awards",
+        "won",
+        "win",
+        "prize",
+        "recognition",
+        "competition",
+        "hackathon",
+        "place",
+        "rank"
+      ],
+      "answer": "1st place: GraphSense, AFRETEC-UNILAG MathWorks category. Top 20 of 300+: Dangote Cement Plc University Engineering Challenge 2026 (team leader). 4th of 10 teams: PIDEC 1.0, Klova (team leader); Stage 1 score 90.5/100. Top 20 semifinalist: The Industry Discourse 5.0 Energy Startup Challenge (team leader). 63rd of 1,600: Squad Hackathon 3.0, Vouch.",
+      "links": []
+    },
+    {
+      "id": "design",
+      "keywords": [
+        "design",
+        "designer",
+        "graphic",
+        "branding",
+        "brand",
+        "logo",
+        "poster"
+      ],
+      "answer": "David's graphic design work lives on a separate site. Those pieces are self-initiated concepts, and the photography in them is licensed stock.",
+      "links": [
+        {
+          "label": "Open the design site",
+          "href": "https://davidgdesigns.vercel.app"
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "keywords": [
+        "service",
+        "services",
+        "offer",
+        "freelance",
+        "website",
+        "websites",
+        "app",
+        "apps",
+        "ai"
+      ],
+      "answer": "David takes on focused websites and frontends, web apps with accounts and data, and applied AI features. He explains his part, what has been tested and what still needs work.",
+      "links": []
+    },
+    {
+      "id": "honesty",
+      "keywords": [
+        "claim",
+        "client",
+        "clients",
+        "real",
+        "concept",
+        "alone",
+        "ai-assisted",
+        "made with ai"
+      ],
+      "answer": "Projects are labelled by what they are: team projects state David's part, concepts are marked as concepts, and no client results are claimed. This portfolio was produced with AI assistance under David's direction.",
+      "links": []
+    },
+    {
+      "id": "project-swift",
+      "keywords": [
+        "swift"
+      ],
+      "answer": "Swift (Education platform, 2026). An academic platform for UNILAG engineering students combining structured course materials, testing and AI-assisted question generation. Role: Owner · full-stack developer. Independently rebuilt and maintain the platform across the frontend, authentication, database, course-material workflow, quiz system and AI-assisted question-generation backend. Result: Several students.",
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://swift-md.vercel.app/"
+        },
+        {
+          "label": "Source",
+          "href": "https://github.com/SwiftDG/SWIFT-MD"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#swift"
+        }
+      ]
+    },
+    {
+      "id": "project-crxray",
+      "keywords": [
+        "crxray"
+      ],
+      "answer": "CrxRay (Developer tooling, 2026). A developer-focused project built for the Tech Literacy Network Hackathon, designed around making technical systems easier to inspect and understand. Role: Hackathon project. Worked on the product as part of the hackathon team, including implementation and preparation of the working demo and submission. Result: TLN Hackathon 2026.",
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://crxray-black.vercel.app/"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#crxray"
+        }
+      ]
+    },
+    {
+      "id": "project-vouch",
+      "keywords": [
+        "vouch"
+      ],
+      "answer": "Vouch (Financial reputation, 2026). A portable trust profile for informal businesses that turns transaction behaviour into a clearer financial-reputation signal. Role: Frontend engineer · hackathon team. Built the trader-facing interface, including the dashboard, score visualisation, tier progression and live server-sent-event updates. I did not build the scoring model or the entire product. Result: 63rd of 1,600 · Squad Hackathon 3.0.",
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://vouchsignal.vercel.app/"
+        },
+        {
+          "label": "Source",
+          "href": "https://github.com/SwiftDG/vouch-signal"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#vouch"
+        }
+      ]
+    },
+    {
+      "id": "project-paypal-hub",
+      "keywords": [
+        "paypal hub",
+        "paypal"
+      ],
+      "answer": "PayPal Hub (Hackathon product, 2026). Find it, pay with PayPal, keep your subscriptions in check. A PayPal AI Hackathon product with a Guardian that watches subscriptions. Role: Frontend engineer · hackathon team. Contributed to the frontend: the homepage, authentication experience, discovery interface and supporting screens, with reusable components. A team handled the backend and AI functionality separately. Result: PayPal AI Hackathon 2026.",
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://paypal-hub.vercel.app/"
+        },
+        {
+          "label": "Source",
+          "href": "https://github.com/MI-Systems-Tech/PayPal-hub"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#paypal-hub"
+        }
+      ]
+    },
+    {
+      "id": "project-urban-brand-creatives",
+      "keywords": [
+        "urban brand creatives",
+        "urban",
+        "brand",
+        "creatives"
+      ],
+      "answer": "Urban Brand Creatives (Business website, 2026). A business website design concept for a Nigerian creative agency. The business did not adopt it. Role: Frontend designer/developer · independent project. Designed and built the frontend as a portfolio project; no client deployment or lead results are claimed. Result: Frontend design concept.",
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://urban-brand-creatives.vercel.app/"
+        },
+        {
+          "label": "Source",
+          "href": "https://github.com/SwiftDG/urban-brand-creatives"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#urban-brand-creatives"
+        }
+      ]
+    },
+    {
+      "id": "project-resonance",
+      "keywords": [
+        "resonance"
+      ],
+      "answer": "Resonance (AI product intelligence, 2026). A two-agent product-intelligence system for product rating and audience segmentation. Role: Frontend engineer · four-person team. Built the frontend interface and implemented Firebase Authentication and Firestore persistence for the team product. Result: Authentication + persistence.",
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://project-resonance.vercel.app"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#resonance"
+        }
+      ]
+    },
+    {
+      "id": "project-nexstore",
+      "keywords": [
+        "nexstore"
+      ],
+      "answer": "NexStore (Storefront frontend, 2026). A working storefront frontend with sample products, search, category filters and a persistent bag. Prices and checkout are not connected. Role: Frontend developer · solo project. Built the browsing and bag interactions. Further pages and functional improvements are in development. Result: Frontend demo, in progress.",
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://itsnexstore.vercel.app/"
+        },
+        {
+          "label": "Source",
+          "href": "https://github.com/SwiftDG/nexstore-ui"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#nexstore"
+        }
+      ]
+    },
+    {
+      "id": "project-pepper-table",
+      "keywords": [
+        "pepper table",
+        "pepper",
+        "table"
+      ],
+      "answer": "Pepper Table (Restaurant website concept, 2026). A responsive Nigerian restaurant website concept with a sample menu, search and category filters. No operating restaurant or orders are implied. Role: Frontend developer · solo project. Built the multi-page static frontend and menu interactions with HTML, CSS and JavaScript. Result: Independent website concept.",
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://pepper-table-site.vercel.app/"
+        },
+        {
+          "label": "Source",
+          "href": "https://github.com/SwiftDG/pepper-table-site"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#pepper-table"
+        }
+      ]
+    },
+    {
+      "id": "project-commonwell-church",
+      "keywords": [
+        "commonwell church",
+        "commonwell",
+        "church"
+      ],
+      "answer": "Commonwell Church (Church website concept, 2026). A four-page website concept for an imagined church community, including first-visit information and sample community pathways. Role: Frontend developer · solo project. Built the responsive pages and interactions. The congregation, location and programme details are illustrative. Result: Independent website concept.",
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://commonwell-church.vercel.app/"
+        },
+        {
+          "label": "Source",
+          "href": "https://github.com/SwiftDG/commonwell-church"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#commonwell-church"
+        }
+      ]
+    },
+    {
+      "id": "project-graphsense",
+      "keywords": [
+        "graphsense"
+      ],
+      "answer": "GraphSense (Engineering visualisation, 2026). A MATLAB prototype translating chart data into changing audio pitch, developed during the AFRETEC-UNILAG MathWorks bootcamp. Role: Team Sync · MATLAB project. Developed the MATLAB implementation and demonstration video for Team Sync, based on Mumeen’s original concept. The web beta is a separate work in progress. Result: 1st place · UNILAG MathWorks bootcamp.",
+      "links": [
+        {
+          "label": "Web beta, in progress",
+          "href": "https://graphsense-web.vercel.app/"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#graphsense"
+        }
+      ]
+    },
+    {
+      "id": "project-fraud-detection",
+      "keywords": [
+        "fraud detection",
+        "fraud",
+        "detection"
+      ],
+      "answer": "Fraud Detection (Applied machine learning, 2026). A comparative machine-learning study for detecting fraudulent card transactions in a highly imbalanced dataset. Role: ML engineer · ECX project. Engineered features, applied SMOTE, compared classification models and evaluated performance on a separate test set. Result: 568K transactions · 99.97% recall.",
+      "links": [
+        {
+          "label": "Source",
+          "href": "https://github.com/SwiftDG/credit-card-fraud-detection"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#fraud-detection"
+        }
+      ]
+    },
+    {
+      "id": "project-dsn-llm",
+      "keywords": [
+        "multilingual news classification",
+        "dsn llm",
+        "multilingual",
+        "news",
+        "classification"
+      ],
+      "answer": "Multilingual news classification (Language models, 2026). Topic classification and headline generation for Hausa, Igbo, Yoruba and Nigerian Pidgin. Role: DSN bootcamp hackathon participant. Experimented with mT5 and LoRA fine-tuning, compared simpler baselines and prepared competition submissions. Result: mT5 and LoRA experiments.",
+      "links": [
+        {
+          "label": "More detail",
+          "href": "/projects#dsn-llm"
+        }
+      ]
+    },
+    {
+      "id": "project-dcp-analysis",
+      "keywords": [
+        "cement mill analysis",
+        "dcp analysis",
+        "cement",
+        "mill",
+        "analysis"
+      ],
+      "answer": "Cement mill analysis (Process engineering, 2026). Mill-shell and liner analysis for the Dangote Cement Plc University Engineering Challenge. Role: Team leader · Team Kilvora. Led ANSYS structural and thermal analysis, supporting calculations and technical research with a two-person team. Modelled conversion estimates are not plant results. Result: Top 20 of 300+ submissions.",
+      "links": [
+        {
+          "label": "More detail",
+          "href": "/projects#dcp-analysis"
+        }
+      ]
+    },
+    {
+      "id": "project-tlud-cookstove",
+      "keywords": [
+        "tlud cookstove",
+        "tlud",
+        "cookstove"
+      ],
+      "answer": "TLUD cookstove (Clean-energy concept, 2026). A design-stage gasifier cookstove and pay-as-you-go adoption concept. Role: Team leader · Team Axel. Led a four-person team and reviewed fuel, market and financial assumptions. No deployed stove or sales are claimed. Result: Top 20 semifinalist · TID 5.0.",
+      "links": [
+        {
+          "label": "More detail",
+          "href": "/projects#tlud-cookstove"
+        }
+      ]
+    },
+    {
+      "id": "project-klova",
+      "keywords": [
+        "klova"
+      ],
+      "answer": "Klova (Process engineering, 2026). A gravity-fed biofiltration cartridge designed and tested by Team CHG for PIDEC 1.0. Role: Team leader · Team CHG. Originated the concept and led the six-person team through design revisions, prototype work and testing; created two Blender process visualisations. Result: 90.5/100 Stage 1 · 4th of 10 national finalists.",
+      "links": [
+        {
+          "label": "More detail",
+          "href": "/projects#klova"
+        }
+      ]
+    }
+  ]
+}

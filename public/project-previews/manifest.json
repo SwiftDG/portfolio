@@ -8,6 +8,7 @@
     "resonance": { "file": "resonance-home.jpg", "source": "https://project-resonance.vercel.app/" },
     "pepper-table": { "file": "pepper-home.jpg", "source": "https://pepper-table-site.vercel.app/" },
     "commonwell-church": { "file": "commonwell-home.jpg", "source": "https://commonwell-church.vercel.app/" },
+    "paypal-hub": { "file": "paypal-hub-home.jpg", "source": "https://paypal-hub.vercel.app/", "capturedOn": "2026-11-21" },
     "crxray": { "file": "crxray-home.jpg", "source": "https://crxray-black.vercel.app/" }
   }
 }

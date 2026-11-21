@@ -1,178 +1,80 @@
-import { useMemo, useState } from "react";
-import {
-  ArrowLeft,
-  ArrowUpRight,
-  Code2,
-  ExternalLink,
-} from "lucide-react";
-import { Link } from "react-router-dom";
+import { useEffect, useMemo, useState } from "react";
+import { ArrowUpRight, Plus } from "../components/site/Icons";
 import { projectFilters, projects } from "../data/projects";
+import Contact from "../components/site/Contact";
+import Roll from "../components/site/Roll";
 
-function ProjectCard({ project, index }) {
+function Row({ project, index, open, onToggle }) {
+  const panel = `panel-${project.slug}`;
   return (
-    <article className="project-file" id={project.slug}>
-      <div className="project-file-meta">
-        <span>{String(index + 1).padStart(2, "0")}</span>
-        <span>{project.year}</span>
-      </div>
-
-      <div className="project-file-main">
-        <div className="project-file-heading">
-          <div>
-            <p className="project-category">{project.category}</p>
-            <h2>{project.name}</h2>
-            <p className="project-role">{project.role}</p>
-          </div>
-
-          <strong>{project.evidence}</strong>
-        </div>
-
-        {project.preview && <figure className="project-preview"><img src={project.preview} alt={`Public homepage of ${project.name}, captured October 2026`} loading="lazy" width="1340" height="930" /><figcaption>PUBLIC HOMEPAGE, OCT 2026</figcaption></figure>}
-        <p className="project-summary">{project.summary}</p>
-
-        <div className="project-contribution">
-          <span>MY CONTRIBUTION</span>
-          <p>{project.contribution}</p>
-        </div>
-
-        <div className="project-file-footer">
-          <div className="project-stack">
-            {project.stack.map((item) => (
-              <span key={item}>{item}</span>
-            ))}
-          </div>
-
-          {(project.live || project.source) && (
-            <div className="project-links">
-              {project.live && (
-                <a href={project.live} target="_blank" rel="noreferrer">
-                  {project.liveLabel || "View live site"}
-                  <ExternalLink />
-                </a>
-              )}
-
-              {project.source && (
-                <a href={project.source} target="_blank" rel="noreferrer">
-                  Source
-                  <Code2 />
-                </a>
-              )}
-            </div>
+    <li className={`arch-row ${open ? "open" : ""}`} id={project.slug}>
+      <button type="button" className="arch-head" aria-expanded={open} aria-controls={panel} onClick={onToggle}>
+        <span className="work-no">{String(index + 1).padStart(2, "0")}</span>
+        <span className="arch-name">{project.name}</span>
+        <span className="arch-cat">{project.category}</span>
+        <span className="arch-year">{project.year}</span>
+        <Plus className="arch-plus" aria-hidden="true" />
+      </button>
+      <div id={panel} className="arch-panel" hidden={!open}>
+        <div className="arch-body">
+          {project.preview && (
+            <figure>
+              <img src={project.preview} alt={`Public homepage of ${project.name}`} loading="lazy" width="1340" height="930" />
+              <figcaption>Public homepage capture, not the full product.</figcaption>
+            </figure>
           )}
+          <div className="arch-copy">
+            <p className="arch-role">{project.role}</p>
+            <p className="arch-sum">{project.summary}</p>
+            <h4>My part</h4>
+            <p>{project.contribution}</p>
+            {project.evidence && <p className="arch-ev"><strong>Result:</strong> {project.evidence}</p>}
+            <p className="arch-stack">{project.stack.join(", ")}</p>
+            <p className="arch-links">
+              {project.live && <a href={project.live} target="_blank" rel="noreferrer"><Roll>{project.liveLabel || "Live site"}</Roll> <ArrowUpRight aria-hidden="true" /></a>}
+              {project.source && <a href={project.source} target="_blank" rel="noreferrer"><Roll>Source</Roll> <ArrowUpRight aria-hidden="true" /></a>}
+            </p>
+          </div>
         </div>
       </div>
-    </article>
+    </li>
   );
 }
 
 export default function Projects() {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [filter, setFilter] = useState("All");
+  const [openSlug, setOpenSlug] = useState(() => (typeof window !== "undefined" ? window.location.hash.slice(1) : ""));
+  const visible = useMemo(
+    () => (filter === "All" ? projects : projects.filter((p) => p.filters.includes(filter))),
+    [filter],
+  );
 
-  const visibleProjects = useMemo(() => {
-    if (activeFilter === "All") return projects;
-
-    return projects.filter((project) =>
-      project.filters.includes(activeFilter)
-    );
-  }, [activeFilter]);
+  useEffect(() => {
+    const onHash = () => setOpenSlug(window.location.hash.slice(1));
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
 
   return (
-    <main className="projects-page">
-      <nav className="top projects-nav">
-        <Link className="logo" to="/">
-          DG<sup>/26</sup>
-        </Link>
-
-        <Link className="projects-back" to="/">
-          <ArrowLeft />
-          Back home
-        </Link>
-      </nav>
-
-      <section className="projects-hero">
-        <p className="label">PROJECT ARCHIVE / 2024—2026</p>
-
-        <h1>
-          The wider
-          <br />
-          body of work.
-        </h1>
-
-        <div className="projects-hero-copy">
-          <p>
-            Software, applied machine learning and engineering projects beyond
-            the focused selection on the homepage.
-          </p>
-
-          <span>
-            {projects.length} PROJECTS
-            <br />
-            LAGOS, NG
-          </span>
-        </div>
+    <>
+      <section className="arch-hero dark">
+        <p className="kicker">Archive</p>
+        <h1>Everything<br />I've built.</h1>
+        <p className="lede">{projects.length} projects across software, applied AI and engineering. Open any row for my part, the result and the links.</p>
       </section>
-
-      <nav className="project-shortcuts" aria-label="Jump to a project">
-        <span>Jump to</span>
-        {["swift", "graphsense", "vouch", "nexstore", "resonance", "pepper-table", "commonwell-church"].map((slug) => {
-          const project = projects.find((item) => item.slug === slug);
-          return <a key={slug} href={`#${slug}`}>{project.name}</a>;
-        })}
-      </nav>
-
-      <section className="project-browser">
-        <div className="project-filter-bar">
-          <p>FILTER / DISCIPLINE</p>
-
-          <div className="project-filters">
-            {projectFilters.map((filter) => (
-              <button
-                type="button"
-                key={filter}
-                className={activeFilter === filter ? "active" : ""}
-                onClick={() => setActiveFilter(filter)}
-              >
-                {filter}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="project-results">
-          <div className="project-results-head">
-            <span>
-              {String(visibleProjects.length).padStart(2, "0")} FILES
-            </span>
-            <span>{activeFilter.toUpperCase()}</span>
-          </div>
-
-          {visibleProjects.map((project, index) => (
-            <ProjectCard
-              key={project.slug}
-              project={project}
-              index={index}
-            />
+      <section className="arch paper" aria-label="Project archive">
+        <div className="filters" role="group" aria-label="Filter projects">
+          {projectFilters.map((f) => (
+            <button key={f} type="button" className={filter === f ? "on" : ""} aria-pressed={filter === f} onClick={() => setFilter(f)}>{f}</button>
           ))}
         </div>
+        <ul className="arch-list">
+          {visible.map((p, i) => (
+            <Row key={p.slug} project={p} index={i} open={openSlug === p.slug} onToggle={() => setOpenSlug(openSlug === p.slug ? "" : p.slug)} />
+          ))}
+        </ul>
       </section>
-
-      <section className="projects-close">
-        <p className="label">SOURCE / CONTINUED WORK</p>
-        <h2>
-          Experiments, repositories
-          <br />
-          and unfinished things.
-        </h2>
-
-        <a
-          href="https://github.com/SwiftDG"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Open GitHub archive
-          <ArrowUpRight />
-        </a>
-      </section>
-    </main>
+      <Contact />
+    </>
   );
 }
