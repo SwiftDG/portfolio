@@ -57,7 +57,7 @@
         "show",
         "examples"
       ],
-      "answer": "Selected work: Swift, GraphSense, Vouch, PayPal Hub, Fraud Detection. There are 15 projects in the full archive, covering software, applied AI and engineering competitions.",
+      "answer": "Selected work: Swift, GraphSense, Vouch, PayPal Hub, Fraud Detection. There are 16 projects in the full archive, covering software, applied AI and engineering competitions.",
       "links": [
         {
           "label": "Open the archive",
@@ -348,6 +348,27 @@
       ]
     },
     {
+      "id": "project-point-of-grace",
+      "keywords": [
+        "point of grace ministries",
+        "point of grace",
+        "point",
+        "grace",
+        "ministries"
+      ],
+      "answer": "Point of Grace Ministries (Church website · Indianapolis, ~1 year). The website of Point of Grace Ministries, a church in Indianapolis, USA. Role: Website maintainer · family church. Maintained the site for about a year for my uncle's church. It is a live site in real use; it was not a paid agency engagement. Result: Maintained for about a year.",
+      "links": [
+        {
+          "label": "Live site",
+          "href": "https://pointofgraceindy.org/"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#point-of-grace"
+        }
+      ]
+    },
+    {
       "id": "project-urban-brand-creatives",
       "keywords": [
         "urban brand creatives",
@@ -355,7 +376,7 @@
         "brand",
         "creatives"
       ],
-      "answer": "Urban Brand Creatives (Business website, 2026). A business website design concept for a Nigerian creative agency. The business did not adopt it. Role: Frontend designer/developer · independent project. Designed and built the frontend as a portfolio project; no client deployment or lead results are claimed. Result: Frontend design concept.",
+      "answer": "Urban Brand Creatives (Business website, 2026). A website for a Nigerian creative agency, designed and built end to end as a frontend portfolio project. Role: Frontend designer and developer · independent project. Designed the interface and built it in React and Next.js. It is a portfolio project, not a live client deployment, and no lead results are claimed. Result: Frontend design project.",
       "links": [
         {
           "label": "Live site",
