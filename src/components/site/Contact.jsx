@@ -15,14 +15,14 @@ export default function Contact() {
   }, []);
 
   return (
-    <footer className="contact dark" id="contact">
+    <footer className="contact ink" id="contact">
       <h2 className="contact-title">
-        <span>Let's work</span>
+        <span>Got a project?</span>
         <span className="contact-line">
-          <span>together</span>
+          <span>Say hello</span>
           <Magnetic className="contact-btn-wrap" strength={0.5}>
             <a className="round-btn accent" href={contact.whatsapp} target="_blank" rel="noreferrer">
-              <span>WhatsApp<br />David</span>
+              <span>WhatsApp<br />me</span>
             </a>
           </Magnetic>
         </span>

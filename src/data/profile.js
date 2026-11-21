@@ -119,18 +119,18 @@ export const skills = {
 
 export const services = [
   {
-    title: "Websites and frontends",
-    text: "Responsive business sites and product interfaces in React, built to explain an offer clearly and give people a next step.",
+    title: "Websites",
+    text: "Clean, fast sites for businesses, churches and products. Built in React, easy to read on a phone, with a clear next step for visitors.",
     proof: "Pepper Table, Commonwell Church, NexStore, Vouch",
   },
   {
-    title: "Web apps with accounts and data",
-    text: "Authentication, databases and dashboards on Supabase or Firebase, with a FastAPI or Node backend where it is needed.",
+    title: "Web apps",
+    text: "Sign-ups, logins, databases and dashboards. I build the screens people click and, where needed, the backend behind them.",
     proof: "Swift, Resonance, Vouch",
   },
   {
-    title: "Applied AI features",
-    text: "Practical use of language models and classical machine learning inside a product, with the limits stated plainly.",
+    title: "AI features",
+    text: "Language models and machine learning inside a product, with the limits stated plainly.",
     proof: "Swift question generation, Fraud Detection, Multilingual news classification",
   },
 ];

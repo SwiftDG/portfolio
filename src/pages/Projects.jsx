@@ -3,6 +3,7 @@ import { ArrowUpRight, Plus } from "../components/site/Icons";
 import { projectFilters, projects } from "../data/projects";
 import Contact from "../components/site/Contact";
 import Roll from "../components/site/Roll";
+import Parallax from "../components/site/Parallax";
 
 function Row({ project, index, open, onToggle }) {
   const panel = `panel-${project.slug}`;
@@ -57,8 +58,8 @@ export default function Projects() {
 
   return (
     <>
-      <section className="arch-hero dark">
-        <h1>Archive</h1>
+      <section className="arch-hero paper">
+        <Parallax speed={0.1}><h1>Everything I've built</h1></Parallax>
         <p className="lede">{projects.length} projects across software, applied AI and engineering. Open any row for my part, the result and the links.</p>
       </section>
       <section className="arch paper" aria-label="Project archive">

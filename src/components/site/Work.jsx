@@ -3,6 +3,7 @@ import { ArrowUpRight } from "./Icons";
 import { projects } from "../../data/projects";
 import { TLink } from "./Transition";
 import { reducedMotion, finePointer } from "../../lib/motion";
+import Reveal from "./Reveal";
 
 const slugs = ["swift", "vouch", "paypal-hub", "resonance", "crxray", "graphsense"];
 const featured = slugs.map((s) => projects.find((p) => p.slug === s));
@@ -10,7 +11,7 @@ const featured = slugs.map((s) => projects.find((p) => p.slug === s));
 export default function Work() {
   const [active, setActive] = useState(null);
   const floater = useRef(null);
-  const pos = useRef({ x: 0, y: 0, tx: 0, ty: 0 });
+  const pos = useRef({ x: -9999, y: -9999, tx: -9999, ty: -9999 });
   const raf = useRef(0);
 
   useEffect(() => {
@@ -39,9 +40,9 @@ export default function Work() {
   };
 
   return (
-    <section className="work dark" id="work" aria-labelledby="work-title">
+    <section className="work ink" id="work" aria-labelledby="work-title">
       <div className="section-head">
-        <h2 id="work-title">Selected work <sup className="count">{String(featured.length).padStart(2, "0")}</sup></h2>
+        <Reveal from="left"><h2 id="work-title">Things I've made</h2></Reveal>
       </div>
       <ul className="work-list" onPointerMove={track} onPointerLeave={() => setActive(null)}>
         {featured.map((p, i) => (
@@ -76,7 +77,7 @@ export default function Work() {
         ))}
       </div>
       <TLink to="/projects" name="Archive" className="archive-link">
-        <span>All {projects.length} projects</span>
+        <span>See all {projects.length}</span>
         <span className="round-btn small"><ArrowUpRight aria-hidden="true" /></span>
       </TLink>
     </section>
