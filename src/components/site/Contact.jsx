@@ -51,9 +51,7 @@ export default function Contact() {
           <p className="fine">Design concepts live on their own site.</p>
         </div>
       </div>
-      <p className="colophon">
-        © {new Date().getFullYear()} David Izuchukwu Gilbert. Designed and built with AI assistance (Claude) under David's direction. Project previews are public homepage captures; each project states David's own part.
-      </p>
+      <p className="colophon">© {new Date().getFullYear()} David Izuchukwu Gilbert</p>
     </footer>
   );
 }

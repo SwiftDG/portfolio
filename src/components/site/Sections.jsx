@@ -90,7 +90,6 @@ export function Experience() {
           <li key={a}><strong>{a}</strong><span>{b}</span></li>
         ))}
       </ul>
-      <p className="fine-print">Competition results belong to the teams. Ongoing programmes are marked ongoing.</p>
       <a className="text-link" href={contact.cv} download><Roll>Download the full CV</Roll></a>
     </section>
   );

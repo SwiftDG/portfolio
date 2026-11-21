@@ -46,7 +46,7 @@ export const experience = [
     title: "Contributor, Academic and Competitions Team",
     place: "AIChE UNILAG",
     period: "Nov 2026 to present",
-    detail: "Joined the team in November 2026 as a contributor. Early days, with no team outputs to report yet.",
+    detail: "Joined the team in November 2026 as a contributor.",
   },
   {
     title: "NextGen AI Hackathon, Team Participant",

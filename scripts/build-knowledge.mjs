@@ -48,7 +48,7 @@ add("services", ["service", "services", "offer", "freelance", "website", "websit
   "David takes on focused websites and frontends, web apps with accounts and data, and applied AI features. He explains his part, what has been tested and what still needs work.");
 
 add("honesty", ["claim", "client", "clients", "real", "concept", "alone", "ai-assisted", "made with ai"],
-  "Projects are labelled by what they are: team projects state David's part, concepts are marked as concepts, and no client results are claimed. This portfolio was produced with AI assistance under David's direction.");
+  "Projects are labelled by what they are: team projects state David's part, concepts are marked as concepts, and no client results are claimed.");
 
 for (const p of projects) {
   const links = [];

@@ -75,7 +75,6 @@ export default function Work() {
           </div>
         ))}
       </div>
-      <p className="work-note">Previews are public homepage captures from October and November 2026. They show landing pages, not full products.</p>
       <TLink to="/projects" name="Archive" className="archive-link">
         <span>All {projects.length} projects</span>
         <span className="round-btn small"><ArrowUpRight aria-hidden="true" /></span>
