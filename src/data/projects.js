@@ -14,7 +14,7 @@ export const projects = [
     category: "Education platform",
     filters: ["Software", "AI / ML"],
     year: "2026",
-    role: "Owner · full-stack developer",
+    role: "Owner, full-stack developer",
     summary:
       "An academic platform for UNILAG engineering students combining structured course materials, testing and AI-assisted question generation.",
     contribution:
@@ -48,12 +48,12 @@ export const projects = [
     category: "Financial reputation",
     filters: ["Software", "Hackathons"],
     year: "2026",
-    role: "Frontend engineer · hackathon team",
+    role: "Frontend engineer, hackathon team",
     summary:
       "A portable trust profile for informal businesses that turns transaction behaviour into a clearer financial-reputation signal.",
     contribution:
       "Built the trader-facing interface, including the dashboard, score visualisation, tier progression and live server-sent-event updates. I did not build the scoring model or the entire product.",
-    evidence: "63rd of 1,600 · Squad Hackathon 3.0",
+    evidence: "63rd of 1,600 in Squad Hackathon 3.0",
     stack: ["React", "TypeScript", "Supabase", "SSE"],
     live: "https://vouchsignal.vercel.app/",
     source: "https://github.com/SwiftDG/vouch-signal",
@@ -65,7 +65,7 @@ export const projects = [
     category: "Hackathon product",
     filters: ["Software", "AI / ML", "Hackathons"],
     year: "2026",
-    role: "Frontend engineer · hackathon team",
+    role: "Frontend engineer, hackathon team",
     summary:
       "Find it, pay with PayPal, keep your subscriptions in check. A PayPal AI Hackathon product with a Guardian that watches subscriptions.",
     contribution:
@@ -78,10 +78,10 @@ export const projects = [
   {
     slug: "point-of-grace",
     name: "Point of Grace Ministries",
-    category: "Church website · Indianapolis",
+    category: "Church website in Indianapolis",
     filters: ["Software"],
     year: "2025",
-    role: "Website maintainer and manager · family church",
+    role: "Website maintainer and manager, family church",
     summary: "The website of Point of Grace Ministries, a church in Indianapolis, USA.",
     contribution:
       "Maintained and managed the site through 2025 for my uncle's church. It was handed to a new developer at the start of 2026, so the live site today is their version, not mine. It was not a paid agency engagement.",
@@ -97,7 +97,7 @@ export const projects = [
     category: "Business website",
     filters: ["Software"],
     year: "2026",
-    role: "Frontend designer and developer · independent project",
+    role: "Frontend designer and developer, independent project",
     summary:
       "A website for a Nigerian creative agency, designed and built end to end as a frontend portfolio project.",
     contribution:
@@ -114,7 +114,7 @@ export const projects = [
     category: "AI product intelligence",
     filters: ["Software", "AI / ML", "Hackathons"],
     year: "2026",
-    role: "Frontend engineer · four-person team",
+    role: "Frontend engineer, four-person team",
     summary:
       "A two-agent product-intelligence system for product rating and audience segmentation.",
     contribution:
@@ -131,7 +131,7 @@ export const projects = [
     category: "Storefront frontend",
     filters: ["Software"],
     year: "2026",
-    role: "Frontend developer · solo project",
+    role: "Frontend developer, solo project",
     summary: "A working storefront frontend with sample products, search, category filters and a persistent bag. Prices and checkout are not connected.",
     contribution: "Built the browsing and bag interactions. Further pages and functional improvements are in development.",
     evidence: "Frontend demo, in progress",
@@ -146,7 +146,7 @@ export const projects = [
     category: "Restaurant website concept",
     filters: ["Software"],
     year: "2026",
-    role: "Frontend developer · solo project",
+    role: "Frontend developer, solo project",
     summary: "A responsive Nigerian restaurant website concept with a sample menu, search and category filters. No operating restaurant or orders are implied.",
     contribution: "Built the multi-page static frontend and menu interactions with HTML, CSS and JavaScript.",
     evidence: "Independent website concept",
@@ -161,7 +161,7 @@ export const projects = [
     category: "Church website concept",
     filters: ["Software"],
     year: "2026",
-    role: "Frontend developer · solo project",
+    role: "Frontend developer, solo project",
     summary: "A four-page website concept for an imagined church community, including first-visit information and sample community pathways.",
     contribution: "Built the responsive pages and interactions. The congregation, location and programme details are illustrative.",
     evidence: "Independent website concept",
@@ -175,12 +175,12 @@ export const projects = [
     category: "Engineering visualisation",
     filters: ["Engineering", "Hackathons"],
     year: "2026",
-    role: "Team Sync · MATLAB project",
+    role: "MATLAB developer, Team Sync",
     summary:
       "A MATLAB prototype translating chart data into changing audio pitch, developed during the AFRETEC-UNILAG MathWorks bootcamp.",
     contribution:
       "Developed the MATLAB implementation and demonstration video for Team Sync, based on Mumeen’s original concept. The web beta is a separate work in progress.",
-    evidence: "1st place · UNILAG MathWorks bootcamp",
+    evidence: "1st place at the UNILAG MathWorks bootcamp",
     stack: ["MATLAB", "Engineering analysis", "Visualisation"],
     live: "https://graphsense-web.vercel.app/",
     liveLabel: "Web beta, in progress",
@@ -192,12 +192,12 @@ export const projects = [
     category: "Applied machine learning",
     filters: ["AI / ML"],
     year: "2026",
-    role: "ML engineer · ECX project",
+    role: "ML engineer, ECX project",
     summary:
       "A comparative machine-learning study for detecting fraudulent card transactions in a highly imbalanced dataset.",
     contribution:
       "Engineered features, applied SMOTE, compared classification models and evaluated performance on a separate test set.",
-    evidence: "568K transactions · 99.97% recall",
+    evidence: "568K transactions, 99.97% recall",
     stack: ["Python", "pandas", "scikit-learn", "XGBoost", "SMOTE"],
     live: null,
     source: "https://github.com/SwiftDG/credit-card-fraud-detection",
@@ -222,7 +222,7 @@ export const projects = [
     category: "Process engineering",
     filters: ["Engineering", "Hackathons"],
     year: "2026",
-    role: "Team leader · Team Kilvora",
+    role: "Team leader, Team Kilvora",
     summary: "Mill-shell and liner analysis for the Dangote Cement Plc University Engineering Challenge.",
     contribution: "Led ANSYS structural and thermal analysis, supporting calculations and technical research with a two-person team. Modelled conversion estimates are not plant results.",
     evidence: "Top 20 of 300+ submissions",
@@ -236,10 +236,10 @@ export const projects = [
     category: "Clean-energy concept",
     filters: ["Engineering", "Hackathons"],
     year: "2026",
-    role: "Team leader · Team Axel",
+    role: "Team leader, Team Axel",
     summary: "A design-stage gasifier cookstove and pay-as-you-go adoption concept.",
     contribution: "Led a four-person team and reviewed fuel, market and financial assumptions. No deployed stove or sales are claimed.",
-    evidence: "Top 20 semifinalist · TID 5.0",
+    evidence: "Top 20 semifinalist at TID 5.0",
     stack: ["Chemical engineering", "Technical research"],
     live: null,
     source: null,
@@ -250,12 +250,12 @@ export const projects = [
     category: "Process engineering",
     filters: ["Engineering", "Hackathons"],
     year: "2026",
-    role: "Team leader · Team CHG",
+    role: "Team leader, Team CHG",
     summary:
       "A gravity-fed biofiltration cartridge designed and tested by Team CHG for PIDEC 1.0.",
     contribution:
       "Originated the concept and led the six-person team through design revisions, prototype work and testing; created two Blender process visualisations.",
-    evidence: "90.5/100 Stage 1 · 4th of 10 national finalists",
+    evidence: "90.5/100 in Stage 1, 4th of 10 national finalists",
     stack: ["Chemical engineering", "Process analysis", "Technical presentation"],
     live: null,
     source: null,

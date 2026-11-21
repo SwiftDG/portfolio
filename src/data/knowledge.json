@@ -271,7 +271,7 @@
       "keywords": [
         "swift"
       ],
-      "answer": "Swift (Education platform, 2026). An academic platform for UNILAG engineering students combining structured course materials, testing and AI-assisted question generation. Role: Owner · full-stack developer. Independently rebuilt and maintain the platform across the frontend, authentication, database, course-material workflow, quiz system and AI-assisted question-generation backend. Result: Several students.",
+      "answer": "Swift (Education platform, 2026). An academic platform for UNILAG engineering students combining structured course materials, testing and AI-assisted question generation. Role: Owner, full-stack developer. Independently rebuilt and maintain the platform across the frontend, authentication, database, course-material workflow, quiz system and AI-assisted question-generation backend. Result: Several students.",
       "links": [
         {
           "label": "Live site",
@@ -309,7 +309,7 @@
       "keywords": [
         "vouch"
       ],
-      "answer": "Vouch (Financial reputation, 2026). A portable trust profile for informal businesses that turns transaction behaviour into a clearer financial-reputation signal. Role: Frontend engineer · hackathon team. Built the trader-facing interface, including the dashboard, score visualisation, tier progression and live server-sent-event updates. I did not build the scoring model or the entire product. Result: 63rd of 1,600 · Squad Hackathon 3.0.",
+      "answer": "Vouch (Financial reputation, 2026). A portable trust profile for informal businesses that turns transaction behaviour into a clearer financial-reputation signal. Role: Frontend engineer, hackathon team. Built the trader-facing interface, including the dashboard, score visualisation, tier progression and live server-sent-event updates. I did not build the scoring model or the entire product. Result: 63rd of 1,600 in Squad Hackathon 3.0.",
       "links": [
         {
           "label": "Live site",
@@ -331,7 +331,7 @@
         "paypal hub",
         "paypal"
       ],
-      "answer": "PayPal Hub (Hackathon product, 2026). Find it, pay with PayPal, keep your subscriptions in check. A PayPal AI Hackathon product with a Guardian that watches subscriptions. Role: Frontend engineer · hackathon team. Contributed to the frontend: the homepage, authentication experience, discovery interface and supporting screens, with reusable components. A team handled the backend and AI functionality separately. Result: PayPal AI Hackathon 2026.",
+      "answer": "PayPal Hub (Hackathon product, 2026). Find it, pay with PayPal, keep your subscriptions in check. A PayPal AI Hackathon product with a Guardian that watches subscriptions. Role: Frontend engineer, hackathon team. Contributed to the frontend: the homepage, authentication experience, discovery interface and supporting screens, with reusable components. A team handled the backend and AI functionality separately. Result: PayPal AI Hackathon 2026.",
       "links": [
         {
           "label": "Live site",
@@ -356,7 +356,7 @@
         "grace",
         "ministries"
       ],
-      "answer": "Point of Grace Ministries (Church website · Indianapolis, 2025). The website of Point of Grace Ministries, a church in Indianapolis, USA. Role: Website maintainer and manager · family church. Maintained and managed the site through 2025 for my uncle's church. It was handed to a new developer at the start of 2026, so the live site today is their version, not mine. It was not a paid agency engagement. Result: Maintained through 2025.",
+      "answer": "Point of Grace Ministries (Church website in Indianapolis, 2025). The website of Point of Grace Ministries, a church in Indianapolis, USA. Role: Website maintainer and manager, family church. Maintained and managed the site through 2025 for my uncle's church. It was handed to a new developer at the start of 2026, so the live site today is their version, not mine. It was not a paid agency engagement. Result: Maintained through 2025.",
       "links": [
         {
           "label": "Current site (now run by another developer)",
@@ -376,7 +376,7 @@
         "brand",
         "creatives"
       ],
-      "answer": "Urban Brand Creatives (Business website, 2026). A website for a Nigerian creative agency, designed and built end to end as a frontend portfolio project. Role: Frontend designer and developer · independent project. Designed the interface and built it in React and Next.js. It is a portfolio project, not a live client deployment, and no lead results are claimed. Result: Frontend design project.",
+      "answer": "Urban Brand Creatives (Business website, 2026). A website for a Nigerian creative agency, designed and built end to end as a frontend portfolio project. Role: Frontend designer and developer, independent project. Designed the interface and built it in React and Next.js. It is a portfolio project, not a live client deployment, and no lead results are claimed. Result: Frontend design project.",
       "links": [
         {
           "label": "Live site",
@@ -397,7 +397,7 @@
       "keywords": [
         "resonance"
       ],
-      "answer": "Resonance (AI product intelligence, 2026). A two-agent product-intelligence system for product rating and audience segmentation. Role: Frontend engineer · four-person team. Built the frontend interface and implemented Firebase Authentication and Firestore persistence for the team product. Result: Authentication + persistence.",
+      "answer": "Resonance (AI product intelligence, 2026). A two-agent product-intelligence system for product rating and audience segmentation. Role: Frontend engineer, four-person team. Built the frontend interface and implemented Firebase Authentication and Firestore persistence for the team product. Result: Authentication + persistence.",
       "links": [
         {
           "label": "Live site",
@@ -414,7 +414,7 @@
       "keywords": [
         "nexstore"
       ],
-      "answer": "NexStore (Storefront frontend, 2026). A working storefront frontend with sample products, search, category filters and a persistent bag. Prices and checkout are not connected. Role: Frontend developer · solo project. Built the browsing and bag interactions. Further pages and functional improvements are in development. Result: Frontend demo, in progress.",
+      "answer": "NexStore (Storefront frontend, 2026). A working storefront frontend with sample products, search, category filters and a persistent bag. Prices and checkout are not connected. Role: Frontend developer, solo project. Built the browsing and bag interactions. Further pages and functional improvements are in development. Result: Frontend demo, in progress.",
       "links": [
         {
           "label": "Live site",
@@ -437,7 +437,7 @@
         "pepper",
         "table"
       ],
-      "answer": "Pepper Table (Restaurant website concept, 2026). A responsive Nigerian restaurant website concept with a sample menu, search and category filters. No operating restaurant or orders are implied. Role: Frontend developer · solo project. Built the multi-page static frontend and menu interactions with HTML, CSS and JavaScript. Result: Independent website concept.",
+      "answer": "Pepper Table (Restaurant website concept, 2026). A responsive Nigerian restaurant website concept with a sample menu, search and category filters. No operating restaurant or orders are implied. Role: Frontend developer, solo project. Built the multi-page static frontend and menu interactions with HTML, CSS and JavaScript. Result: Independent website concept.",
       "links": [
         {
           "label": "Live site",
@@ -460,7 +460,7 @@
         "commonwell",
         "church"
       ],
-      "answer": "Commonwell Church (Church website concept, 2026). A four-page website concept for an imagined church community, including first-visit information and sample community pathways. Role: Frontend developer · solo project. Built the responsive pages and interactions. The congregation, location and programme details are illustrative. Result: Independent website concept.",
+      "answer": "Commonwell Church (Church website concept, 2026). A four-page website concept for an imagined church community, including first-visit information and sample community pathways. Role: Frontend developer, solo project. Built the responsive pages and interactions. The congregation, location and programme details are illustrative. Result: Independent website concept.",
       "links": [
         {
           "label": "Live site",
@@ -481,7 +481,7 @@
       "keywords": [
         "graphsense"
       ],
-      "answer": "GraphSense (Engineering visualisation, 2026). A MATLAB prototype translating chart data into changing audio pitch, developed during the AFRETEC-UNILAG MathWorks bootcamp. Role: Team Sync · MATLAB project. Developed the MATLAB implementation and demonstration video for Team Sync, based on Mumeen’s original concept. The web beta is a separate work in progress. Result: 1st place · UNILAG MathWorks bootcamp.",
+      "answer": "GraphSense (Engineering visualisation, 2026). A MATLAB prototype translating chart data into changing audio pitch, developed during the AFRETEC-UNILAG MathWorks bootcamp. Role: MATLAB developer, Team Sync. Developed the MATLAB implementation and demonstration video for Team Sync, based on Mumeen’s original concept. The web beta is a separate work in progress. Result: 1st place at the UNILAG MathWorks bootcamp.",
       "links": [
         {
           "label": "Web beta, in progress",
@@ -500,7 +500,7 @@
         "fraud",
         "detection"
       ],
-      "answer": "Fraud Detection (Applied machine learning, 2026). A comparative machine-learning study for detecting fraudulent card transactions in a highly imbalanced dataset. Role: ML engineer · ECX project. Engineered features, applied SMOTE, compared classification models and evaluated performance on a separate test set. Result: 568K transactions · 99.97% recall.",
+      "answer": "Fraud Detection (Applied machine learning, 2026). A comparative machine-learning study for detecting fraudulent card transactions in a highly imbalanced dataset. Role: ML engineer, ECX project. Engineered features, applied SMOTE, compared classification models and evaluated performance on a separate test set. Result: 568K transactions, 99.97% recall.",
       "links": [
         {
           "label": "Source",
@@ -538,7 +538,7 @@
         "mill",
         "analysis"
       ],
-      "answer": "Cement mill analysis (Process engineering, 2026). Mill-shell and liner analysis for the Dangote Cement Plc University Engineering Challenge. Role: Team leader · Team Kilvora. Led ANSYS structural and thermal analysis, supporting calculations and technical research with a two-person team. Modelled conversion estimates are not plant results. Result: Top 20 of 300+ submissions.",
+      "answer": "Cement mill analysis (Process engineering, 2026). Mill-shell and liner analysis for the Dangote Cement Plc University Engineering Challenge. Role: Team leader, Team Kilvora. Led ANSYS structural and thermal analysis, supporting calculations and technical research with a two-person team. Modelled conversion estimates are not plant results. Result: Top 20 of 300+ submissions.",
       "links": [
         {
           "label": "More detail",
@@ -553,7 +553,7 @@
         "tlud",
         "cookstove"
       ],
-      "answer": "TLUD cookstove (Clean-energy concept, 2026). A design-stage gasifier cookstove and pay-as-you-go adoption concept. Role: Team leader · Team Axel. Led a four-person team and reviewed fuel, market and financial assumptions. No deployed stove or sales are claimed. Result: Top 20 semifinalist · TID 5.0.",
+      "answer": "TLUD cookstove (Clean-energy concept, 2026). A design-stage gasifier cookstove and pay-as-you-go adoption concept. Role: Team leader, Team Axel. Led a four-person team and reviewed fuel, market and financial assumptions. No deployed stove or sales are claimed. Result: Top 20 semifinalist at TID 5.0.",
       "links": [
         {
           "label": "More detail",
@@ -566,7 +566,7 @@
       "keywords": [
         "klova"
       ],
-      "answer": "Klova (Process engineering, 2026). A gravity-fed biofiltration cartridge designed and tested by Team CHG for PIDEC 1.0. Role: Team leader · Team CHG. Originated the concept and led the six-person team through design revisions, prototype work and testing; created two Blender process visualisations. Result: 90.5/100 Stage 1 · 4th of 10 national finalists.",
+      "answer": "Klova (Process engineering, 2026). A gravity-fed biofiltration cartridge designed and tested by Team CHG for PIDEC 1.0. Role: Team leader, Team CHG. Originated the concept and led the six-person team through design revisions, prototype work and testing; created two Blender process visualisations. Result: 90.5/100 in Stage 1, 4th of 10 national finalists.",
       "links": [
         {
           "label": "More detail",
