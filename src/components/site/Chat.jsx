@@ -37,6 +37,7 @@ export default function Chat() {
   const log = useRef(null);
   const input = useRef(null);
   const launcher = useRef(null);
+  const panel = useRef(null);
 
   useEffect(() => {
     const t = setTimeout(() => setHint(true), 2600);
@@ -45,12 +46,43 @@ export default function Chat() {
 
   useEffect(() => {
     if (!open) return;
-    input.current?.focus();
+    // On phones the keyboard would cover half the panel, so wait for the visitor to tap the input.
+    if (!window.matchMedia("(max-width: 600px)").matches) input.current?.focus();
     const onKey = (event) => {
       if (event.key === "Escape") { setOpen(false); launcher.current?.focus(); }
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  // Phones: the panel fills the screen, follows the visible area above the keyboard,
+  // and the page behind stops scrolling until the panel closes.
+  useEffect(() => {
+    if (!open) return;
+    const small = window.matchMedia("(max-width: 600px)");
+    if (!small.matches) return;
+    const y = window.scrollY;
+    const body = document.body.style;
+    const prev = { position: body.position, top: body.top, width: body.width };
+    document.documentElement.classList.add("chat-locked");
+    Object.assign(body, { position: "fixed", top: `-${y}px`, width: "100%" });
+    const vv = window.visualViewport;
+    const fit = () => {
+      if (!panel.current || !vv) return;
+      panel.current.style.setProperty("--vvh", `${vv.height}px`);
+      panel.current.style.setProperty("--vvt", `${vv.offsetTop}px`);
+      if (log.current) log.current.scrollTop = log.current.scrollHeight;
+    };
+    fit();
+    vv?.addEventListener("resize", fit);
+    vv?.addEventListener("scroll", fit);
+    return () => {
+      vv?.removeEventListener("resize", fit);
+      vv?.removeEventListener("scroll", fit);
+      document.documentElement.classList.remove("chat-locked");
+      Object.assign(body, prev);
+      window.scrollTo(0, y);
+    };
   }, [open]);
 
   useEffect(() => {
@@ -71,15 +103,15 @@ export default function Chat() {
   };
 
   return (
-    <div className="chat">
+    <div className={`chat${open ? " is-open" : ""}`}>
       {open && (
-        <section className="chat-panel" role="dialog" aria-label="Scripted assistant">
+        <section ref={panel} className="chat-panel" role="dialog" aria-label="Scripted assistant">
           <header>
             <div>
               <strong>Ask about David</strong>
               <p>Scripted assistant. No AI model, only answers from the CV and projects.</p>
             </div>
-            <button type="button" onClick={() => { setOpen(false); launcher.current?.focus(); }} aria-label="Close chat"><X /></button>
+            <button type="button" className="chat-close" onClick={() => { setOpen(false); launcher.current?.focus(); }} aria-label="Close chat"><X /></button>
           </header>
           <div className="chat-log" ref={log} data-native-scroll role="log" aria-live="polite" tabIndex={0} aria-label="Conversation">
             <p className="msg bot">Hi, I'm the assistant on David's site. Pick a question or type your own.</p>

@@ -14,7 +14,7 @@ export const projects = [
     category: "Education platform",
     filters: ["Software", "AI / ML"],
     year: "2026",
-    role: "Owner, full-stack developer",
+    role: "Maintainer and full-stack developer (rebuilt from an earlier team version)",
     summary:
       "An academic platform for UNILAG engineering students combining structured course materials, testing and AI-assisted question generation.",
     contribution:
@@ -170,6 +170,38 @@ export const projects = [
     source: "https://github.com/SwiftDG/commonwell-church",
   },
   {
+    slug: "codecanvas",
+    name: "CodeCanvas",
+    category: "Browser coding workspace",
+    filters: ["Software"],
+    year: "2026",
+    role: "Full-stack developer, solo project",
+    summary:
+      "A local-first coding workspace that runs in the browser, aimed at learners writing small programs on limited or unreliable connections.",
+    contribution:
+      "Built the Monaco-based editor with multiple files and tabs, browser persistence with clear save states, read-only share links with project forking, .canvas export and import, and JavaScript execution inside a disposable Web Worker that is stopped after three seconds. Python, TypeScript and C++ execution, accounts and cross-device sync were planned and are not implemented.",
+    evidence: "Working prototype; runs JavaScript only",
+    stack: ["React", "TypeScript", "Vite", "Monaco Editor", "Web Workers", "Service worker"],
+    live: null,
+    source: "https://github.com/SwiftDG/codecanvas",
+  },
+  {
+    slug: "loopscope",
+    name: "LoopScope",
+    category: "Control-system response analyser",
+    filters: ["Software", "Engineering"],
+    year: "2026",
+    role: "Developer, solo project",
+    summary:
+      "A browser tool that reads a step-response CSV (time, setpoint and measured value) and reports how the control loop behaved. Data stays in the browser.",
+    contribution:
+      "Built CSV validation with header aliases, the response measurements (overshoot, settling time within a 2% band, steady-state error and setpoint crossings), an SVG response chart with the settling band, and CSV summary export. The measurement definitions still need checking against independent test cases.",
+    evidence: "Prototype, not a certified engineering tool",
+    stack: ["React", "TypeScript", "Vite", "SVG charts"],
+    live: null,
+    source: "https://github.com/SwiftDG/loopscope",
+  },
+  {
     slug: "graphsense",
     name: "GraphSense",
     category: "Engineering visualisation",
@@ -255,7 +287,7 @@ export const projects = [
       "A gravity-fed biofiltration cartridge designed and tested by Team CHG for PIDEC 1.0.",
     contribution:
       "Originated the concept and led the six-person team through design revisions, prototype work and testing; created two Blender process visualisations.",
-    evidence: "90.5/100 in Stage 1, 4th of 10 national finalists",
+    evidence: "90.5/100 in Stage 1, 4th of 10 departmental teams",
     stack: ["Chemical engineering", "Process analysis", "Technical presentation"],
     live: null,
     source: null,

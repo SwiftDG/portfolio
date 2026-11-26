@@ -27,7 +27,7 @@ export default function Contact() {
           </Magnetic>
         </span>
       </h2>
-      <p className="contact-avail"><i aria-hidden="true" /> Available for freelance projects</p>
+      <p className="contact-avail"><i aria-hidden="true" /> Available for remote full-time, part-time or contract work</p>
       <div className="contact-lines">
         <a href={`mailto:${contact.email}?subject=Project%20inquiry`}><Roll>{contact.email}</Roll></a>
         <a href={`tel:${contact.phone.replace(/\s/g, "")}`}><Roll>{contact.phone}</Roll></a>

@@ -57,7 +57,7 @@
         "show",
         "examples"
       ],
-      "answer": "Selected work: Swift, GraphSense, Vouch, PayPal Hub, Fraud Detection. There are 16 projects in the full archive, covering software, applied AI and engineering competitions.",
+      "answer": "Selected work: Swift, GraphSense, Vouch, PayPal Hub, Fraud Detection. There are 18 projects in the full archive, covering software, applied AI and engineering competitions.",
       "links": [
         {
           "label": "Open the archive",
@@ -94,7 +94,7 @@
         "work with",
         "open"
       ],
-      "answer": "Available for freelance projects. SIWES placement at Nigerite ended on 3 November 2026. The quickest way to start is a message on WhatsApp or email.",
+      "answer": "Available for remote full-time, part-time or contract work. SIWES placement at Nigerite ended on 3 November 2026. The quickest way to start is a message on WhatsApp or email.",
       "links": [
         {
           "label": "WhatsApp",
@@ -271,7 +271,7 @@
       "keywords": [
         "swift"
       ],
-      "answer": "Swift (Education platform, 2026). An academic platform for UNILAG engineering students combining structured course materials, testing and AI-assisted question generation. Role: Owner, full-stack developer. Independently rebuilt and maintain the platform across the frontend, authentication, database, course-material workflow, quiz system and AI-assisted question-generation backend. Result: Several students.",
+      "answer": "Swift (Education platform, 2026). An academic platform for UNILAG engineering students combining structured course materials, testing and AI-assisted question generation. Role: Maintainer and full-stack developer (rebuilt from an earlier team version). Independently rebuilt and maintain the platform across the frontend, authentication, database, course-material workflow, quiz system and AI-assisted question-generation backend. Result: Several students.",
       "links": [
         {
           "label": "Live site",
@@ -477,6 +477,40 @@
       ]
     },
     {
+      "id": "project-codecanvas",
+      "keywords": [
+        "codecanvas"
+      ],
+      "answer": "CodeCanvas (Browser coding workspace, 2026). A local-first coding workspace that runs in the browser, aimed at learners writing small programs on limited or unreliable connections. Role: Full-stack developer, solo project. Built the Monaco-based editor with multiple files and tabs, browser persistence with clear save states, read-only share links with project forking, .canvas export and import, and JavaScript execution inside a disposable Web Worker that is stopped after three seconds. Python, TypeScript and C++ execution, accounts and cross-device sync were planned and are not implemented. Result: Working prototype; runs JavaScript only.",
+      "links": [
+        {
+          "label": "Source",
+          "href": "https://github.com/SwiftDG/codecanvas"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#codecanvas"
+        }
+      ]
+    },
+    {
+      "id": "project-loopscope",
+      "keywords": [
+        "loopscope"
+      ],
+      "answer": "LoopScope (Control-system response analyser, 2026). A browser tool that reads a step-response CSV (time, setpoint and measured value) and reports how the control loop behaved. Data stays in the browser. Role: Developer, solo project. Built CSV validation with header aliases, the response measurements (overshoot, settling time within a 2% band, steady-state error and setpoint crossings), an SVG response chart with the settling band, and CSV summary export. The measurement definitions still need checking against independent test cases. Result: Prototype, not a certified engineering tool.",
+      "links": [
+        {
+          "label": "Source",
+          "href": "https://github.com/SwiftDG/loopscope"
+        },
+        {
+          "label": "More detail",
+          "href": "/projects#loopscope"
+        }
+      ]
+    },
+    {
       "id": "project-graphsense",
       "keywords": [
         "graphsense"
@@ -566,7 +600,7 @@
       "keywords": [
         "klova"
       ],
-      "answer": "Klova (Process engineering, 2026). A gravity-fed biofiltration cartridge designed and tested by Team CHG for PIDEC 1.0. Role: Team leader, Team CHG. Originated the concept and led the six-person team through design revisions, prototype work and testing; created two Blender process visualisations. Result: 90.5/100 in Stage 1, 4th of 10 national finalists.",
+      "answer": "Klova (Process engineering, 2026). A gravity-fed biofiltration cartridge designed and tested by Team CHG for PIDEC 1.0. Role: Team leader, Team CHG. Originated the concept and led the six-person team through design revisions, prototype work and testing; created two Blender process visualisations. Result: 90.5/100 in Stage 1, 4th of 10 departmental teams.",
       "links": [
         {
           "label": "More detail",

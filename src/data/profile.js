@@ -15,7 +15,7 @@ export const contact = {
 };
 
 export const availability =
-  "Available for freelance projects. SIWES placement at Nigerite ended on 3 November 2026.";
+  "Available for remote full-time, part-time or contract work. SIWES placement at Nigerite ended on 3 November 2026.";
 
 export const education = [
   {

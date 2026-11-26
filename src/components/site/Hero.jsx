@@ -6,7 +6,7 @@ import { reducedMotion } from "../../lib/motion";
 import { scrollToId } from "../../lib/smoothScroll";
 
 const words = [
-  { cls: "w1", text: "Developer", Icon: Code },
+  { cls: "w1", text: "Full-Stack Developer", Icon: Code },
   { cls: "w2", text: "Applied AI", Icon: Spark },
   { cls: "w3", text: "Chemical Engineering", Icon: Flask },
 ];
@@ -57,7 +57,7 @@ export default function Hero() {
       </div>
       <div className="hero-foot">
         <p className="hero-sub">I make websites and AI tools, and I study Chemical Engineering in Lagos.</p>
-        <p className="hero-avail"><i aria-hidden="true" /> Available for freelance projects</p>
+        <p className="hero-avail"><i aria-hidden="true" /> Available for remote full-time, part-time or contract work</p>
         <Magnetic className="hero-scroll-wrap" strength={0.45}>
           <button type="button" className="round-btn" onClick={() => scrollToId("intro")}>
             <ArrowDown aria-hidden="true" /><span className="sr-only">Scroll to introduction</span>
